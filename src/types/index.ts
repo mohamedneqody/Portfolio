@@ -7,6 +7,13 @@ export interface NavItem {
   href: string;
 }
 
+export interface CaseStudy {
+  problem: string;
+  solution: string;
+  tech: string;
+  result: string;
+}
+
 export interface Project {
   id: number;
   title: string;
@@ -18,15 +25,34 @@ export interface Project {
   liveUrl?: string;
   githubUrl?: string;
   year: string;
+  caseStudy?: CaseStudy;
 }
 
 export interface Skill {
   name: string;
-  /** Proficiency 0 – 100 */
-  level: number;
+  /** Years of experience, e.g. "3+ Years" */
+  years: string;
   /** Icon identifier (e.g. a simple-icons slug or emoji) */
   icon: string;
   category: string;
+}
+
+export interface Service {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface Outcome {
+  metric: string;
+  title: string;
+  description: string;
+}
+
+export interface ProcessStep {
+  number: string;
+  title: string;
+  description: string;
 }
 
 export interface SocialLink {

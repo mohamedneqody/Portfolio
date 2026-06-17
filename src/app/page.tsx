@@ -1,65 +1,160 @@
-import Image from "next/image";
+"use client";
+
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import SmoothScroll from "@/components/providers/SmoothScroll";
+import AnimationProvider from "@/components/providers/AnimationProvider";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import ScrollProgress from "@/components/layout/ScrollProgress";
+import CustomCursor from "@/components/ui/CustomCursor";
+import BackToTop from "@/components/ui/BackToTop";
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Skills from "@/components/sections/Skills";
+import Projects from "@/components/sections/Projects";
+import Contact from "@/components/sections/Contact";
+import SectionDivider from "@/components/layout/SectionDivider";
+
+import Services from "@/components/sections/Services";
+import Achievements from "@/components/sections/Achievements";
+import Process from "@/components/sections/Process";
+import Outcomes from "@/components/sections/Outcomes";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time for premium feel
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <AnimatePresence mode="wait">
+        {isLoading && (
+          <motion.div
+            key="loader"
+            className="fixed inset-0 z-[200] flex items-center justify-center bg-[#0a0612]"
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            {/* Animated background blobs */}
+            <div className="absolute inset-0 overflow-hidden">
+              <motion.div
+                className="absolute top-1/2 left-1/2 w-[300px] h-[300px] rounded-full blur-[80px]"
+                style={{ background: "rgba(124, 58, 237, 0.3)" }}
+                animate={{
+                  scale: [1, 1.3, 1],
+                  x: ["-50%", "-40%", "-50%"],
+                  y: ["-50%", "-60%", "-50%"],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
+              <motion.div
+                className="absolute top-1/2 left-1/2 w-[200px] h-[200px] rounded-full blur-[60px]"
+                style={{ background: "rgba(34, 211, 238, 0.2)" }}
+                animate={{
+                  scale: [1, 0.8, 1],
+                  x: ["-50%", "-60%", "-50%"],
+                  y: ["-50%", "-40%", "-50%"],
+                }}
+                transition={{
+                  duration: 2.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.5,
+                }}
+              />
+            </div>
+
+            {/* Loading content */}
+            <div className="relative z-10 flex flex-col items-center gap-8">
+              {/* Logo */}
+              <motion.div
+                className="text-3xl font-bold tracking-tight text-white"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                style={{ fontFamily: "var(--font-outfit), sans-serif" }}
+              >
+                algorithm cities
+              </motion.div>
+
+              {/* Loading bar */}
+              <div className="w-48 h-[2px] bg-white/10 rounded-full overflow-hidden">
+                <motion.div
+                  className="h-full rounded-full"
+                  style={{
+                    background: "linear-gradient(90deg, #7C3AED, #22D3EE)",
+                  }}
+                  initial={{ width: "0%" }}
+                  animate={{ width: "100%" }}
+                  transition={{ duration: 1.8, ease: "easeInOut" }}
+                />
+              </div>
+
+              {/* Loading dots */}
+              <div className="flex gap-2">
+                {[0, 1, 2].map((i) => (
+                  <motion.div
+                    key={i}
+                    className="w-2 h-2 rounded-full"
+                    style={{ background: "#22D3EE" }}
+                    animate={{ opacity: [0.3, 1, 0.3] }}
+                    transition={{
+                      duration: 1,
+                      repeat: Infinity,
+                      delay: i * 0.2,
+                    }}
+                  />
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {!isLoading && (
+        <AnimationProvider>
+          <SmoothScroll>
+            <CustomCursor />
+            <ScrollProgress />
+            <Navbar />
+
+            <main>
+              <Hero />
+              <SectionDivider />
+              <About />
+              <SectionDivider />
+              <Services />
+              <SectionDivider />
+              <Projects />
+              <SectionDivider />
+              <Outcomes />
+              <SectionDivider />
+              <Skills />
+              <SectionDivider />
+              <Achievements />
+              <SectionDivider />
+              <Process />
+              <SectionDivider />
+              <Contact />
+            </main>
+
+            <Footer />
+            <BackToTop />
+          </SmoothScroll>
+        </AnimationProvider>
+      )}
+    </>
   );
 }

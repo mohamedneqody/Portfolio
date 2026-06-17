@@ -1,26 +1,119 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #050510;
+  --foreground: #ededed;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: #7C3AED;
+  --color-secondary: #A855F7;
+  --color-accent: #22D3EE;
+  --color-highlight: #F8FAFC;
+  --color-glow: #38BDF8;
+  --font-sans: var(--font-inter), var(--font-outfit), sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ── Hero gradient blob keyframes ──────────── */
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(40px, -60px) scale(1.1);
+  }
+  50% {
+    transform: translate(-30px, 30px) scale(0.95);
+  }
+  75% {
+    transform: translate(50px, 20px) scale(1.05);
+  }
+}
+
+/* ── Gradient text keyframes ──────────────── */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ── Floating light streak keyframes ──────── */
+@keyframes streak {
+  0% {
+    transform: translateX(-200%) rotate(var(--tw-rotate, 0deg));
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100vw + 200%)) rotate(var(--tw-rotate, 0deg));
+    opacity: 0;
+  }
+}
+
+/* ── Ambient glow pulse for cards ─────────── */
+@keyframes ambientGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(34, 211, 238, 0.05), 0 0 30px rgba(124, 58, 237, 0.03);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.1), 0 0 50px rgba(124, 58, 237, 0.06);
+  }
+}
+
+/* ── Blinking cursor keyframe ──────────────── */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ── Smooth scroll ─────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Selection color ───────────────────────── */
+::selection {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* ── Scrollbar styling ─────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050510;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888888;
 }
