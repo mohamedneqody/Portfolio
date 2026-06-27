@@ -59,7 +59,11 @@ export function CertificateCard({ cert, onClick }: { cert: Certificate; onClick:
       <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-br from-[#22D3EE]/0 via-[#7C3AED]/0 to-[#22D3EE]/0 opacity-0 blur-md transition-all duration-500 group-hover:from-[#22D3EE]/50 group-hover:via-[#7C3AED]/50 group-hover:to-[#22D3EE]/50 group-hover:opacity-100" />
       
       <div 
-        className="relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#0a0515] transition-colors group-hover:border-white/20 group-hover:bg-[#0f0820]"
+        className={`relative flex h-full flex-col overflow-hidden rounded-2xl border transition-colors group-hover:bg-[#0f0820] ${
+          cert.provider.toLowerCase().includes('google') || cert.provider.toLowerCase().includes('ibm')
+            ? 'border-[#22D3EE]/30 bg-[#0a0515]/80 group-hover:border-[#22D3EE]/60 shadow-[0_0_15px_rgba(34,211,238,0.1)] group-hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]'
+            : 'border-white/10 bg-[#0a0515] group-hover:border-white/20'
+        }`}
         style={{ transform: "translateZ(30px)" }}
       >
         {/* Top Badge */}
@@ -76,7 +80,16 @@ export function CertificateCard({ cert, onClick }: { cert: Certificate; onClick:
         )}
 
         {/* Provider Icon / Name */}
-        <div className="absolute right-3 top-3 z-10 rounded-full bg-black/60 px-3 py-1 text-[10px] font-bold text-white backdrop-blur-md border border-white/10">
+        <div className="absolute right-3 top-3 z-10 flex items-center gap-1.5 rounded-full bg-black/60 px-3 py-1.5 text-[10px] font-bold text-white backdrop-blur-md border border-white/10">
+          {cert.provider.toLowerCase().includes("google") ? (
+            <svg viewBox="0 0 24 24" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          ) : cert.provider.toLowerCase().includes("ibm") ? (
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="#0f62fe" xmlns="http://www.w3.org/2000/svg"><path d="M0 17.5h7.2v-2H0v2zm0-4.6h7.2v-2H0v2zm0-4.5h7.2v-2H0v2zM0 3.8h7.2v-2H0v2zm11.3 13.7h-2.3v-2h2.3c1.5 0 2.4-1.2 2.4-2.7v-1.6c0-1.5-.9-2.7-2.4-2.7h-2.3v-2h2.3c2.7 0 4.6 2 4.6 4.7v1.6c0 2.7-1.9 4.7-4.6 4.7zm-2.3-9.1h3c1.5 0 2.4-1.2 2.4-2.7V4.2c0-1.5-.9-2.7-2.4-2.7h-3v2h3c.3 0 .6.3.6.7v1.6c0 .4-.3.7-.6.7h-3v2zm9 9.1h4.5v-2H18v2zm0-4.6h4.5v-2H18v2zm0-4.5h4.5v-2H18v2zM18 3.8h4.5v-2H18v2z"/></svg>
+          ) : cert.provider.toLowerCase().includes("udemy") ? (
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="#a435f0" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.132 15.526c-1.399 1.341-3.149 2.012-5.132 2.012-1.982 0-3.732-.67-5.132-2.012-1.399-1.342-2.099-3.093-2.099-5.253V7.042h2.529v3.231c0 1.488.467 2.659 1.401 3.513.932.853 2.054 1.28 3.364 1.28 1.31 0 2.431-.427 3.364-1.28.934-.854 1.401-2.025 1.401-3.513V7.042h2.529v3.231c.002 2.16-.698 3.911-2.097 5.253z"/></svg>
+          ) : cert.provider.toLowerCase().includes("coursera") ? (
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="#0056D2" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.8 17.5c-3.1 0-5.7-2.6-5.7-5.7s2.6-5.7 5.7-5.7c1.4 0 2.7.5 3.7 1.4l-1.4 1.6c-.6-.6-1.4-.9-2.2-.9-1.9 0-3.4 1.6-3.4 3.5s1.6 3.5 3.4 3.5c.8 0 1.6-.3 2.2-.9l1.4 1.6c-1 .9-2.3 1.5-3.7 1.5z"/></svg>
+          ) : null}
           {cert.provider}
         </div>
 
