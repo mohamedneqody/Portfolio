@@ -106,13 +106,9 @@ export function Hero({ certificates }: { certificates: Certificate[] }) {
                 'C++', 'Data Structures', 'Problem Solving'
               ].map((tech) => (
                 <motion.span 
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ y: -2 }}
                   key={tech} 
-                  className={`rounded-full border px-4 py-2 text-sm font-bold transition-colors ${
-                    ['n8n', 'MongoDB', 'Redis', 'C++'].includes(tech) 
-                      ? 'border-[#22D3EE]/40 bg-[#22D3EE]/10 text-[#22D3EE] shadow-[0_0_10px_rgba(34,211,238,0.1)]' 
-                      : 'border-white/10 bg-white/5 text-white hover:bg-white/10'
-                  }`}
+                  className="rounded-full border border-white/5 bg-white/5 px-4 py-2 text-sm font-bold text-white/80 transition-all hover:border-[#7C3AED]/40 hover:text-white hover:shadow-[0_0_15px_rgba(124,58,237,0.15)] hover:bg-[#0a0515]"
                 >
                   {tech}
                 </motion.span>
