@@ -54,16 +54,17 @@ export function EnhancedModal({ cert, allCerts, onClose, onSelectCert }: Props) 
         onClick={onClose}
       >
         <motion.div
-          initial={{ scale: 0.95, opacity: 0, y: 20 }}
-          animate={{ scale: 1, opacity: 1, y: 0 }}
-          exit={{ scale: 0.95, opacity: 0, y: 20 }}
+          initial={{ x: '100%', opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: '100%', opacity: 0 }}
+          transition={{ type: "spring", damping: 25, stiffness: 200 }}
           onClick={(e) => e.stopPropagation()}
-          className="relative flex w-full max-w-6xl flex-col overflow-hidden rounded-3xl border border-white/10 bg-[#0a0515] shadow-2xl shadow-[#22D3EE]/10 md:flex-row max-h-[90vh]"
+          className="absolute right-0 top-0 h-full w-full max-w-4xl flex flex-col md:flex-row overflow-hidden border-l border-white/10 bg-[#0a0515] shadow-2xl shadow-[#22D3EE]/10"
         >
           {/* Close Button */}
           <button
             onClick={onClose}
-            className="absolute right-4 top-4 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-md transition-colors hover:bg-white/20"
+            className="absolute left-4 top-4 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-md transition-colors hover:bg-white/20 md:right-4 md:left-auto"
             aria-label="Close modal"
           >
             <X size={20} />

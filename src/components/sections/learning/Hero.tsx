@@ -125,7 +125,7 @@ export function Hero({ certificates }: { certificates: Certificate[] }) {
           </div>
 
           {/* What I Can Build (Dynamic) */}
-          <div className="mx-auto max-w-5xl rounded-3xl border border-[#22D3EE]/20 bg-[#22D3EE]/5 p-8 backdrop-blur-md md:p-12 text-right">
+          <div className="mx-auto mb-16 max-w-5xl rounded-3xl border border-[#22D3EE]/20 bg-[#22D3EE]/5 p-8 backdrop-blur-md md:p-12 text-right">
             <h3 className="mb-8 text-2xl font-bold text-white">ماذا تُمكّنني هذه الشهادات من البناء؟ (What These Certificates Enable Me To Build)</h3>
             <div className="grid grid-cols-2 gap-x-8 gap-y-4 md:grid-cols-4">
               {dynamicBuildSkills.map((skill) => (
@@ -139,9 +139,95 @@ export function Hero({ certificates }: { certificates: Certificate[] }) {
             </div>
           </div>
 
+          {/* AI Generated Summary & Progress */}
+          <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-8 text-right">
+            
+            {/* Left: Progress Bars */}
+            <div className="rounded-3xl border border-white/5 bg-white/5 p-8 backdrop-blur-md">
+              <h3 className="mb-6 text-xl font-bold text-white">Learning Progress by Domain</h3>
+              <div className="space-y-4">
+                <ProgressBar label="Machine Learning & AI" percent={100} />
+                <ProgressBar label="LLMs & Generative AI" percent={95} />
+                <ProgressBar label="Backend & APIs" percent={85} />
+                <ProgressBar label="Workflow Automation (n8n)" percent={80} />
+                <ProgressBar label="Data Science" percent={70} />
+              </div>
+            </div>
+
+            {/* Right: AI Summary & Heatmap */}
+            <div className="flex flex-col gap-8">
+              <div className="rounded-3xl border border-[#7C3AED]/20 bg-[#7C3AED]/5 p-8 backdrop-blur-md relative overflow-hidden">
+                <div className="absolute top-0 right-0 p-4 opacity-10">
+                  <svg viewBox="0 0 24 24" width="64" height="64" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                </div>
+                <div className="mb-4 flex items-center justify-end gap-2 text-[#b895ff]">
+                  <span className="text-xs font-bold uppercase tracking-widest">AI Generated Summary</span>
+                  <div className="h-2 w-2 animate-pulse rounded-full bg-[#7C3AED]" />
+                </div>
+                <p className="text-lg text-white/90 leading-relaxed font-medium">
+                  "Based on the analysis of 56 professional certificates, this engineer demonstrates deep specialization in <strong className="text-white">AI Agents, LLM Applications, and Automation</strong>. Ranked in the top 5% for continuous learning diversity and production-focused implementation."
+                </p>
+              </div>
+
+              {/* Heatmap Activity */}
+              <div className="rounded-3xl border border-white/5 bg-white/5 p-8 backdrop-blur-md">
+                <h3 className="mb-4 text-sm font-bold text-white/50">Continuous Learning Activity</h3>
+                <div className="flex flex-col gap-2">
+                  <HeatmapRow year="2026" intensity={[4, 4, 3, 4, 4, 5, 5, 4, 3, 4]} />
+                  <HeatmapRow year="2025" intensity={[3, 4, 5, 4, 3, 2, 4, 5, 4, 3, 4, 5, 4]} />
+                  <HeatmapRow year="2024" intensity={[2, 3, 2, 4, 3, 4, 3, 2, 3, 4]} />
+                  <HeatmapRow year="2023" intensity={[1, 2, 1, 2, 3, 2]} />
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </motion.div>
       </div>
     </section>
+  );
+}
+
+function ProgressBar({ label, percent }: { label: string; percent: number }) {
+  return (
+    <div>
+      <div className="mb-1 flex justify-between text-xs font-medium text-white/70">
+        <span>{percent}%</span>
+        <span>{label}</span>
+      </div>
+      <div className="h-2 w-full overflow-hidden rounded-full bg-white/10 flex justify-end">
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: `${percent}%` }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="h-full rounded-full bg-gradient-to-l from-[#22D3EE] to-[#7C3AED]"
+        />
+      </div>
+    </div>
+  );
+}
+
+function HeatmapRow({ year, intensity }: { year: string; intensity: number[] }) {
+  return (
+    <div className="flex items-center justify-end gap-3">
+      <div className="flex flex-wrap justify-end gap-1">
+        {intensity.map((val, i) => (
+          <div 
+            key={i} 
+            className={`h-3 w-3 rounded-sm ${
+              val === 5 ? 'bg-emerald-400' :
+              val === 4 ? 'bg-emerald-500/80' :
+              val === 3 ? 'bg-emerald-600/60' :
+              val === 2 ? 'bg-emerald-700/40' :
+              'bg-emerald-800/20'
+            }`} 
+          />
+        ))}
+      </div>
+      <span className="text-xs font-bold text-white/40 w-8">{year}</span>
+    </div>
   );
 }
 

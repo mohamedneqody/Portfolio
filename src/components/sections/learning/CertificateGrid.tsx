@@ -1,24 +1,54 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { Certificate } from "@/types";
 import { CertificateCard } from "./CertificateCard";
 import { EnhancedModal } from "./EnhancedModal";
-import { Search, Filter, ChevronDown, Activity } from "lucide-react";
+import { Search, Filter, ChevronDown, Activity, FolderOpen } from "lucide-react";
+import { useRouter, useSearchParams } from "next/navigation";
 
 export function CertificateGrid({ certificates }: { certificates: Certificate[] }) {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedProvider, setSelectedProvider] = useState<string>("All");
   const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
   const [visibleCount, setVisibleCount] = useState(24);
 
-  // Compute Provider Stats
-  const providerStats = useMemo(() => {
+  // Sync state with URL parameter 'cert'
+  useEffect(() => {
+    const certId = searchParams.get('cert');
+    if (certId) {
+      const found = certificates.find(c => String(c.id) === certId);
+      if (found) {
+        setSelectedCert(found);
+      }
+    } else {
+      setSelectedCert(null);
+    }
+  }, [searchParams, certificates]);
+
+  const handleOpenCert = (cert: Certificate) => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set('cert', String(cert.id));
+    router.push(`?${params.toString()}`, { scroll: false });
+  };
+
+  const handleCloseCert = () => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.delete('cert');
+    router.push(params.toString() ? `?${params.toString()}` : window.location.pathname, { scroll: false });
+  };
+
+  // Compute Category Stats
+  const categoryStats = useMemo(() => {
     const stats: Record<string, number> = { All: certificates.length };
     certificates.forEach(c => {
-      stats[c.provider] = (stats[c.provider] || 0) + 1;
+      if (c.category) {
+        stats[c.category] = (stats[c.category] || 0) + 1;
+      }
     });
-    // Sort descending by count, keep 'All' at front
     return Object.entries(stats).sort((a, b) => a[0] === 'All' ? -1 : b[0] === 'All' ? 1 : b[1] - a[1]);
   }, [certificates]);
 
@@ -27,7 +57,6 @@ export function CertificateGrid({ certificates }: { certificates: Certificate[] 
     const stats: Record<string, number> = {};
     certificates.forEach(c => {
       c.skills.forEach(s => {
-        // Weighted for highlighted certs
         const weight = c.provider === 'Google AI' ? 10 : (c.provider === 'Coursera' ? 5 : 3);
         stats[s] = (stats[s] || 0) + weight;
       });
@@ -40,7 +69,7 @@ export function CertificateGrid({ certificates }: { certificates: Certificate[] 
     let result = certificates;
 
     if (selectedProvider !== "All") {
-      result = result.filter(c => c.provider === selectedProvider);
+      result = result.filter(c => c.category === selectedProvider); // using category now
     }
 
     if (searchQuery.trim()) {
@@ -62,31 +91,31 @@ export function CertificateGrid({ certificates }: { certificates: Certificate[] 
   }, [certificates, searchQuery, selectedProvider]);
 
   return (
-    <section className="py-24 bg-[#05020a]">
+    <section className="py-24 bg-[#05020a]" id="certificates-grid">
       <div className="container mx-auto px-6">
         
-        {/* Dynamic Provider Dashboard */}
+        {/* Dynamic Category Dashboard */}
         <div className="mb-16">
-          <h2 className="mb-6 text-xl font-bold text-white flex items-center gap-2">
-            <Activity className="text-[#22D3EE]" /> Provider Dashboard
+          <h2 className="mb-6 text-xl font-bold text-white flex items-center gap-2 justify-end">
+            التصنيفات <FolderOpen className="text-[#22D3EE]" />
           </h2>
-          <div className="flex flex-wrap gap-3">
-            {providerStats.map(([provider, count]) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {categoryStats.map(([category, count]) => (
               <button
-                key={provider}
-                onClick={() => { setSelectedProvider(provider); setVisibleCount(24); }}
-                className={`flex items-center gap-2 rounded-full border px-4 py-2 transition-all ${
-                  selectedProvider === provider 
-                    ? 'border-[#22D3EE] bg-[#22D3EE]/10 text-[#22D3EE] shadow-[0_0_15px_rgba(34,211,238,0.2)]' 
-                    : 'border-white/10 bg-white/5 text-white/70 hover:border-white/20'
+                key={category}
+                onClick={() => { setSelectedProvider(category); setVisibleCount(24); }}
+                className={`flex flex-col items-center justify-center p-6 rounded-2xl border transition-all ${
+                  selectedProvider === category 
+                    ? 'border-[#22D3EE] bg-[#22D3EE]/10 shadow-[0_0_20px_rgba(34,211,238,0.15)]' 
+                    : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/10'
                 }`}
               >
-                <span className="text-sm font-semibold">{provider}</span>
-                <span className={`flex h-6 min-w-[24px] items-center justify-center rounded-full text-xs font-bold ${
-                  selectedProvider === provider ? 'bg-[#22D3EE] text-black' : 'bg-white/10 text-white'
-                }`}>
+                <div className={`text-3xl font-black mb-2 ${selectedProvider === category ? 'text-[#22D3EE]' : 'text-white'}`}>
                   {count}
-                </span>
+                </div>
+                <div className={`text-sm font-semibold text-center ${selectedProvider === category ? 'text-white' : 'text-white/60'}`}>
+                  {category}
+                </div>
               </button>
             ))}
           </div>
@@ -126,7 +155,7 @@ export function CertificateGrid({ certificates }: { certificates: Certificate[] 
           <>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {filteredCerts.slice(0, visibleCount).map((cert) => (
-                <CertificateCard key={cert.id} cert={cert} onClick={() => setSelectedCert(cert)} />
+                <CertificateCard key={cert.id} cert={cert} onClick={() => handleOpenCert(cert)} />
               ))}
             </div>
 
@@ -169,8 +198,8 @@ export function CertificateGrid({ certificates }: { certificates: Certificate[] 
       <EnhancedModal 
         cert={selectedCert} 
         allCerts={certificates}
-        onClose={() => setSelectedCert(null)} 
-        onSelectCert={(cert) => setSelectedCert(cert)}
+        onClose={handleCloseCert} 
+        onSelectCert={handleOpenCert}
       />
     </section>
   );
