@@ -61,14 +61,17 @@ def run():
                 img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
                 img.save(out_path, "WEBP", quality=80)
                 
+                verify_url = f"https://ude.my/{title}" if title.startswith("UC-") else ""
+                
                 certificates.append({
                     "id": cert_id,
                     "title": title,
-                    "issuer": "Coursera / Udemy" if "Coursera" in title or "UC-" in title else "Unknown",
+                    "issuer": "Udemy" if title.startswith("UC-") else ("Coursera" if "Coursera" in title else "Unknown"),
                     "date": "2026",
                     "category": category,
                     "image": f"/certificates/images/{out_filename}",
-                    "pdfUrl": "" # We don't have online links yet
+                    "pdfUrl": "",
+                    "verifyUrl": verify_url
                 })
                 cert_id += 1
 
@@ -94,14 +97,17 @@ def run():
                         img = img.convert("RGB")
                     img.save(out_path, "WEBP", quality=80)
                     
+                    verify_url = f"https://ude.my/{title}" if title.startswith("UC-") else ""
+                    
                     certificates.append({
                         "id": cert_id,
                         "title": title.replace("WhatsApp Image", "Certificate").strip(),
-                        "issuer": "Online Platform",
+                        "issuer": "Udemy" if title.startswith("UC-") else "Online Platform",
                         "date": "2026",
                         "category": category,
                         "image": f"/certificates/images/{out_filename}",
-                        "pdfUrl": ""
+                        "pdfUrl": "",
+                        "verifyUrl": verify_url
                     })
                     cert_id += 1
                     

@@ -6,7 +6,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_1.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 2,
@@ -15,79 +16,88 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_2.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 3,
     "title": "Coursera 605OLH14TTRC_copy",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_3.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 4,
     "title": "Coursera ALYPZMT8QRKJ_copy",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_4.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 5,
     "title": "Coursera FJ27J0NCFC8K_copy",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_5.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 6,
     "title": "Coursera J7A1SXCS5RFL",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_6.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 7,
     "title": "Coursera Q8UW44EU09F0_copy",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_7.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 8,
     "title": "Coursera QZDGRSNPSF7C_copy",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_8.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 9,
     "title": "UC-29c16e5a-c882-4ddc-b3e3-5546aca36d97",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Udemy",
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_9.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": "https://ude.my/UC-29c16e5a-c882-4ddc-b3e3-5546aca36d97"
   },
   {
     "id": 10,
     "title": "UC-a770b1ea-2304-4825-b1e9-0a8a15b4794d",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Udemy",
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_10.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": "https://ude.my/UC-a770b1ea-2304-4825-b1e9-0a8a15b4794d"
   },
   {
     "id": 11,
@@ -96,88 +106,98 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_11.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 12,
     "title": "UC-87445101-1117-4a6e-bf5d-13e44928396a",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Udemy",
     "date": "2026",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_12.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": "https://ude.my/UC-87445101-1117-4a6e-bf5d-13e44928396a"
   },
   {
     "id": 13,
     "title": "Coursera 0M946GOQMW9J_copy",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_13.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 14,
     "title": "Coursera 739G9LKBNODC_copy",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_14.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 15,
     "title": "Coursera D69F7M63BV1J_copy",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_15.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 16,
     "title": "Coursera database",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_16.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 17,
     "title": "Coursera IKGTFHY6MESI_copy",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_17.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 18,
     "title": "Coursera VRMF6XQ365JF_copy",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_18.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 19,
     "title": "UC-91cf41a5-b0fd-42f6-b23e-8324dbdf8fb6",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Udemy",
     "date": "2026",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_19.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": "https://ude.my/UC-91cf41a5-b0fd-42f6-b23e-8324dbdf8fb6"
   },
   {
     "id": 20,
     "title": "UC-bf40ef85-776e-4da2-beba-114baf6aadb6",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Udemy",
     "date": "2026",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_20.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": "https://ude.my/UC-bf40ef85-776e-4da2-beba-114baf6aadb6"
   },
   {
     "id": 21,
@@ -186,25 +206,28 @@
     "date": "2026",
     "category": "Cloud & DevOps",
     "image": "/certificates/images/cert_21.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 22,
     "title": "Coursera UT5ZZND3F2Q8_copy",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Coursera",
     "date": "2026",
     "category": "Cloud & DevOps",
     "image": "/certificates/images/cert_22.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 23,
     "title": "UC-b09685d3-aa01-4eeb-8246-20b95d398c23",
-    "issuer": "Coursera / Udemy",
+    "issuer": "Udemy",
     "date": "2026",
     "category": "Cloud & DevOps",
     "image": "/certificates/images/cert_23.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": "https://ude.my/UC-b09685d3-aa01-4eeb-8246-20b95d398c23"
   },
   {
     "id": 24,
@@ -213,7 +236,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_24.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 25,
@@ -222,7 +246,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_25.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 26,
@@ -231,7 +256,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_26.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 27,
@@ -240,7 +266,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_27.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 28,
@@ -249,7 +276,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_28.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 29,
@@ -258,7 +286,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_29.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 30,
@@ -267,7 +296,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_30.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 31,
@@ -276,7 +306,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_31.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 32,
@@ -285,7 +316,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_32.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 33,
@@ -294,7 +326,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_33.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 34,
@@ -303,7 +336,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_34.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 35,
@@ -312,7 +346,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_35.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 36,
@@ -321,7 +356,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_36.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 37,
@@ -330,7 +366,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_37.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 38,
@@ -339,7 +376,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_38.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 39,
@@ -348,7 +386,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_39.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 40,
@@ -357,7 +396,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_40.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 41,
@@ -366,7 +406,8 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_41.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 42,
@@ -375,34 +416,38 @@
     "date": "2026",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_42.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 43,
     "title": "UC-207beef1-f75c-46a9-89ef-93a9ac962336",
-    "issuer": "Online Platform",
+    "issuer": "Udemy",
     "date": "2026",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_43.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": "https://ude.my/UC-207beef1-f75c-46a9-89ef-93a9ac962336"
   },
   {
     "id": 44,
     "title": "UC-d64ae192-c77b-43a0-87e0-683422100a4d",
-    "issuer": "Online Platform",
+    "issuer": "Udemy",
     "date": "2026",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_44.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": "https://ude.my/UC-d64ae192-c77b-43a0-87e0-683422100a4d"
   },
   {
     "id": 45,
     "title": "UC-fabaff13-3b9f-4f76-9482-42419f08b795",
-    "issuer": "Online Platform",
+    "issuer": "Udemy",
     "date": "2026",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_45.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": "https://ude.my/UC-fabaff13-3b9f-4f76-9482-42419f08b795"
   },
   {
     "id": 46,
@@ -411,7 +456,8 @@
     "date": "2026",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_46.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 47,
@@ -420,7 +466,8 @@
     "date": "2026",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_47.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 48,
@@ -429,7 +476,8 @@
     "date": "2026",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_48.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 49,
@@ -438,7 +486,8 @@
     "date": "2026",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_49.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 50,
@@ -447,7 +496,8 @@
     "date": "2026",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_50.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 51,
@@ -456,7 +506,8 @@
     "date": "2026",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_51.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 52,
@@ -465,16 +516,18 @@
     "date": "2026",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_52.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
   },
   {
     "id": 53,
     "title": "UC-bf0acf2c-985b-413c-9062-de1cebaa9c8c",
-    "issuer": "Online Platform",
+    "issuer": "Udemy",
     "date": "2026",
     "category": "Data Science",
     "image": "/certificates/images/cert_53.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": "https://ude.my/UC-bf0acf2c-985b-413c-9062-de1cebaa9c8c"
   },
   {
     "id": 54,
@@ -483,6 +536,27 @@
     "date": "2026",
     "category": "Data Science",
     "image": "/certificates/images/cert_54.webp",
-    "pdfUrl": ""
+    "pdfUrl": "",
+    "verifyUrl": ""
+  },
+  {
+    "id": 55,
+    "title": "UC-833e64c3-750d-4831-8361-68b3b4a29d70",
+    "issuer": "Udemy",
+    "date": "2026",
+    "category": "LLM & Generative AI",
+    "image": "/certificates/images/cert_55.webp",
+    "pdfUrl": "",
+    "verifyUrl": "https://ude.my/UC-833e64c3-750d-4831-8361-68b3b4a29d70"
+  },
+  {
+    "id": 56,
+    "title": "UC-87445101-1117-4a6e-bf5d-13e44928396a",
+    "issuer": "Udemy",
+    "date": "2026",
+    "category": "LLM & Generative AI",
+    "image": "/certificates/images/cert_56.webp",
+    "pdfUrl": "",
+    "verifyUrl": "https://ude.my/UC-87445101-1117-4a6e-bf5d-13e44928396a"
   }
 ]
