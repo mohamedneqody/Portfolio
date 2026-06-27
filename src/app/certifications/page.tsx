@@ -10,7 +10,7 @@ import GlassCard from '@/components/ui/GlassCard';
 export default function CertificationsPage() {
   const [activeCategory, setActiveCategory] = useState<string>('الكل');
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
 
   const filtered = useMemo(() => {
     let result = certificates;
@@ -41,7 +41,7 @@ export default function CertificationsPage() {
   useMemo(() => {
     if (typeof window !== 'undefined') {
       const handleKeyDown = (e: KeyboardEvent) => {
-        if (e.key === 'Escape') setSelectedImage(null);
+        if (e.key === 'Escape') setSelectedCert(null);
       };
       window.addEventListener('keydown', handleKeyDown);
       return () => window.removeEventListener('keydown', handleKeyDown);
@@ -52,26 +52,40 @@ export default function CertificationsPage() {
     <div className="min-h-screen bg-[#050510] text-white">
       {/* Lightbox Modal */}
       <AnimatePresence>
-        {selectedImage && (
+        {selectedCert && selectedCert.image && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setSelectedImage(null)}
-            className="fixed inset-0 z-[999] flex items-center justify-center bg-black/90 p-4 backdrop-blur-md cursor-zoom-out"
+            onClick={() => setSelectedCert(null)}
+            className="fixed inset-0 z-[999] flex flex-col items-center justify-center bg-black/90 p-4 backdrop-blur-md cursor-zoom-out"
           >
             <motion.img
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              src={selectedImage}
-              alt="Certificate Fullscreen"
-              className="max-h-full max-w-full rounded-xl object-contain shadow-2xl shadow-[#22D3EE]/20"
+              src={selectedCert.image}
+              alt={selectedCert.title}
+              className="max-h-[85vh] max-w-full rounded-xl object-contain shadow-2xl shadow-[#22D3EE]/20 mb-4"
               onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image itself
             />
+            {selectedCert.verifyUrl && (
+              <motion.a
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                href={selectedCert.verifyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="flex items-center gap-2 rounded-full bg-[#22D3EE] px-6 py-2.5 text-sm font-bold text-black hover:bg-[#38BDF8] transition-colors shadow-[0_0_20px_rgba(34,211,238,0.4)]"
+              >
+                <ExternalLink size={16} /> تحقق من الشهادة رسمياً
+              </motion.a>
+            )}
             <button
-              onClick={() => setSelectedImage(null)}
+              onClick={() => setSelectedCert(null)}
               className="absolute top-6 right-6 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
             >
               ✕
@@ -181,7 +195,7 @@ export default function CertificationsPage() {
                   {/* Certificate Image */}
                   <div 
                     className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-[#7C3AED]/20 via-[#1a0a2e] to-[#22D3EE]/20 cursor-zoom-in"
-                    onClick={() => cert.image && setSelectedImage(cert.image)}
+                    onClick={() => setSelectedCert(cert)}
                   >
                     {cert.image ? (
                       <img
