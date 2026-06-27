@@ -77,10 +77,10 @@ export function Roadmap() {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="flex items-center justify-end gap-6 relative"
                   >
-                    <span className={`text-lg font-bold ${index >= evolution.length - 3 ? 'text-white' : 'text-white/50'}`}>
+                    <span className="text-lg font-bold text-white">
                       {step}
                     </span>
-                    <div className={`z-10 h-6 w-6 rounded-full border-4 border-[#0a0515] ${index >= evolution.length - 3 ? 'bg-[#22D3EE] shadow-[0_0_15px_rgba(34,211,238,0.5)]' : 'bg-white/20'}`} />
+                    <div className="z-10 h-6 w-6 rounded-full border-4 border-[#0a0515] bg-[#22D3EE] shadow-[0_0_15px_rgba(34,211,238,0.5)]" />
                   </motion.div>
                 ))}
               </div>
