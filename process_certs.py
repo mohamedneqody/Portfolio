@@ -61,11 +61,20 @@ def run():
                 img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
                 img.save(out_path, "WEBP", quality=80)
                 
-                verify_url = f"https://ude.my/{title}" if title.startswith("UC-") else ""
+                verify_url = ""
+                if title.startswith("UC-"):
+                    verify_url = f"https://ude.my/{title}"
+                elif "Coursera" in title:
+                    # extract the code which is usually a string of uppercase letters and numbers
+                    # e.g. "Coursera 605OLH14TTRC_copy" -> "605OLH14TTRC"
+                    parts = title.split()
+                    if len(parts) > 1:
+                        code = parts[1].split('_')[0]
+                        verify_url = f"https://coursera.org/verify/{code}"
                 
                 certificates.append({
                     "id": cert_id,
-                    "title": title,
+                    "title": title.replace("_copy", "").strip(),
                     "issuer": "Udemy" if title.startswith("UC-") else ("Coursera" if "Coursera" in title else "Unknown"),
                     "date": "2026",
                     "category": category,
