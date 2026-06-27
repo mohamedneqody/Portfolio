@@ -32,8 +32,27 @@ export function Hero({ certificates }: { certificates: Certificate[] }) {
 
   return (
     <section className="relative overflow-hidden border-b border-white/5 py-24">
-      {/* Background Glow */}
-      <div className="absolute left-1/2 top-1/2 -z-10 h-[600px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#22D3EE]/5 opacity-50 blur-[120px]" />
+      {/* Animated Background Glows */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <motion.div 
+          animate={{ 
+            x: [0, 100, 0, -100, 0],
+            y: [0, -50, 50, -50, 0],
+            scale: [1, 1.2, 1, 1.1, 1]
+          }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="absolute left-[20%] top-[20%] h-[500px] w-[500px] rounded-full bg-[#22D3EE]/10 blur-[100px]" 
+        />
+        <motion.div 
+          animate={{ 
+            x: [0, -100, 0, 100, 0],
+            y: [0, 100, -50, 100, 0],
+            scale: [1, 1.5, 1, 1.2, 1]
+          }}
+          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          className="absolute right-[20%] top-[40%] h-[600px] w-[600px] rounded-full bg-[#7C3AED]/10 blur-[120px]" 
+        />
+      </div>
 
       <div className="container relative z-10 mx-auto px-6">
         <motion.div
@@ -49,22 +68,22 @@ export function Hero({ certificates }: { certificates: Certificate[] }) {
             </span>
           </div>
 
-          <h1 className="mb-6 bg-gradient-to-br from-white via-gray-200 to-gray-500 bg-clip-text text-5xl font-black text-transparent md:text-7xl">
+          <h1 className="mb-6 bg-gradient-to-br from-white via-gray-200 to-gray-500 bg-clip-text text-5xl font-black text-transparent md:text-7xl drop-shadow-sm">
             Learning Journey
           </h1>
           
           <div className="mx-auto mb-10 max-w-3xl text-lg text-white/60 md:text-xl leading-relaxed">
-            <p className="mb-2">From continuous learning to production-ready AI systems.</p>
+            <p className="mb-2" dir="ltr">From continuous learning to production-ready AI systems.</p>
           </div>
 
-          <div className="mx-auto mb-10 flex flex-col items-center gap-2 text-sm font-semibold text-[#38BDF8]">
+          <div className="mx-auto mb-10 flex flex-col items-center gap-2 text-sm font-semibold text-[#38BDF8]" dir="ltr">
             <p>56 verified certifications.</p>
             <p>60+ real-world AI projects.</p>
             <p>Every certificate contributed to practical engineering experience.</p>
           </div>
 
           <div className="mb-16 flex justify-center">
-            <a href="#certificates-grid" className="rounded-full bg-white text-black px-8 py-3 font-bold hover:bg-gray-200 transition-colors">
+            <a href="#certificates-grid" className="rounded-full bg-white text-black px-8 py-3 font-bold hover:bg-gray-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.2)]">
               Explore My Journey
             </a>
           </div>
@@ -81,10 +100,22 @@ export function Hero({ certificates }: { certificates: Certificate[] }) {
           <div className="mx-auto mb-16 max-w-4xl">
             <h3 className="mb-6 text-sm font-bold uppercase tracking-widest text-white/40">Core Stack</h3>
             <div className="flex flex-wrap justify-center gap-3">
-              {['Python', 'FastAPI', 'LangChain', 'Docker', 'n8n', 'OpenAI', 'Gemini', 'PostgreSQL', 'Redis', 'Next.js'].map((tech) => (
-                <span key={tech} className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10">
+              {[
+                'Python', 'FastAPI', 'LangChain', 'Docker', 'n8n', 
+                'MongoDB', 'Redis', 'PostgreSQL', 'Next.js', 
+                'C++', 'Data Structures', 'Problem Solving'
+              ].map((tech) => (
+                <motion.span 
+                  whileHover={{ scale: 1.05 }}
+                  key={tech} 
+                  className={`rounded-full border px-4 py-2 text-sm font-bold transition-colors ${
+                    ['n8n', 'MongoDB', 'Redis', 'C++'].includes(tech) 
+                      ? 'border-[#22D3EE]/40 bg-[#22D3EE]/10 text-[#22D3EE] shadow-[0_0_10px_rgba(34,211,238,0.1)]' 
+                      : 'border-white/10 bg-white/5 text-white hover:bg-white/10'
+                  }`}
+                >
                   {tech}
-                </span>
+                </motion.span>
               ))}
             </div>
           </div>
