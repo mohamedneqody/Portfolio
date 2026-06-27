@@ -91,7 +91,7 @@ export function Preloader() {
               transition={{ delay: 0.2 }}
               className="mb-2 text-2xl font-bold tracking-widest text-white uppercase"
             >
-              System Initializing
+              Algorithm Cities
             </motion.h1>
             
             <motion.p
