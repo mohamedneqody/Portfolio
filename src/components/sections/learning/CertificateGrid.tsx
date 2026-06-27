@@ -166,7 +166,12 @@ export function CertificateGrid({ certificates }: { certificates: Certificate[] 
 
       </div>
 
-      <EnhancedModal cert={selectedCert} onClose={() => setSelectedCert(null)} />
+      <EnhancedModal 
+        cert={selectedCert} 
+        allCerts={certificates}
+        onClose={() => setSelectedCert(null)} 
+        onSelectCert={(cert) => setSelectedCert(cert)}
+      />
     </section>
   );
 }
