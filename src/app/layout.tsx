@@ -56,6 +56,7 @@ export const metadata: Metadata = {
 
 import { Preloader } from "@/components/ui/Preloader";
 import { MouseEffects } from "@/components/ui/MouseEffects";
+import MeshGradient from "@/components/backgrounds/MeshGradient";
 
 export default function RootLayout({
   children,
@@ -73,9 +74,13 @@ export default function RootLayout({
         <meta name="theme-color" content="#0a0612" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="min-h-screen bg-dark-bg text-text-primary font-sans overflow-x-hidden">
+      <body className="min-h-screen bg-dark-bg text-text-primary font-sans overflow-x-hidden cursor-none">
         <Preloader />
         <MouseEffects />
+        
+        {/* Guaranteed Animated Background */}
+        <MeshGradient />
+        
         {/* Global Advanced 3D Background */}
         <BackgroundCanvas />
         
