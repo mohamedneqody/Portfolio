@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function LearningJourneyPage() {
   return (
     <main className="min-h-screen bg-[#05020a]">
-      <Hero />
+      <Hero certificates={certificates} />
       <Roadmap />
       <CertificateGrid certificates={certificates} />
       
