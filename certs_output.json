@@ -1,562 +1,1872 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "152859227",
-    "issuer": "Unknown",
-    "date": "2026",
+    "provider": "Unknown",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_1.webp",
+    "skills": [
+      "Python",
+      "AI Automation",
+      "Prompt Engineering"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": true,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Top Pick"
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "153199135",
-    "issuer": "Unknown",
-    "date": "2026",
+    "provider": "Unknown",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_2.webp",
+    "skills": [
+      "Python",
+      "AI Automation",
+      "Prompt Engineering"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": true,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Top Pick"
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "Coursera 605OLH14TTRC",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_3.webp",
+    "skills": [
+      "Python",
+      "AI Automation",
+      "Prompt Engineering"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/605OLH14TTRC",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/605OLH14TTRC"
+    "featured": true,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Top Pick"
   },
   {
-    "id": 4,
+    "id": "4",
     "title": "Coursera ALYPZMT8QRKJ",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_4.webp",
+    "skills": [
+      "Python",
+      "AI Automation",
+      "Prompt Engineering"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/ALYPZMT8QRKJ",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/ALYPZMT8QRKJ"
+    "featured": true,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 5,
+    "id": "5",
     "title": "Coursera FJ27J0NCFC8K",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_5.webp",
+    "skills": [
+      "Python",
+      "AI Automation",
+      "Prompt Engineering"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/FJ27J0NCFC8K",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/FJ27J0NCFC8K"
+    "featured": true,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 6,
+    "id": "6",
     "title": "Coursera J7A1SXCS5RFL",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_6.webp",
+    "skills": [
+      "Python",
+      "AI Automation",
+      "Prompt Engineering"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/J7A1SXCS5RFL",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/J7A1SXCS5RFL"
+    "featured": true,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 7,
+    "id": "7",
     "title": "Coursera Q8UW44EU09F0",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_7.webp",
+    "skills": [
+      "Python",
+      "AI Automation",
+      "Prompt Engineering"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/Q8UW44EU09F0",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/Q8UW44EU09F0"
+    "featured": true,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 8,
+    "id": "8",
     "title": "Coursera QZDGRSNPSF7C",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_8.webp",
+    "skills": [
+      "Python",
+      "AI Automation",
+      "Prompt Engineering"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/QZDGRSNPSF7C",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/QZDGRSNPSF7C"
+    "featured": true,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 9,
+    "id": "9",
     "title": "UC-29c16e5a-c882-4ddc-b3e3-5546aca36d97",
-    "issuer": "Udemy",
-    "date": "2026",
+    "provider": "Udemy",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_9.webp",
+    "skills": [
+      "Python",
+      "AI Automation",
+      "Prompt Engineering"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://ude.my/UC-29c16e5a-c882-4ddc-b3e3-5546aca36d97",
     "pdfUrl": "",
-    "verifyUrl": "https://ude.my/UC-29c16e5a-c882-4ddc-b3e3-5546aca36d97"
+    "featured": true,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 10,
+    "id": "10",
     "title": "UC-a770b1ea-2304-4825-b1e9-0a8a15b4794d",
-    "issuer": "Udemy",
-    "date": "2026",
+    "provider": "Udemy",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_10.webp",
+    "skills": [
+      "Python",
+      "AI Automation",
+      "Prompt Engineering"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://ude.my/UC-a770b1ea-2304-4825-b1e9-0a8a15b4794d",
     "pdfUrl": "",
-    "verifyUrl": "https://ude.my/UC-a770b1ea-2304-4825-b1e9-0a8a15b4794d"
+    "featured": true,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 11,
+    "id": "11",
     "title": "شهاده اكسيل",
-    "issuer": "Unknown",
-    "date": "2026",
+    "provider": "Unknown",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_11.webp",
+    "skills": [
+      "Python",
+      "AI Automation",
+      "Prompt Engineering"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": true,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": null
   },
   {
-    "id": 12,
+    "id": "12",
     "title": "UC-87445101-1117-4a6e-bf5d-13e44928396a",
-    "issuer": "Udemy",
-    "date": "2026",
+    "provider": "Udemy",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_12.webp",
+    "skills": [
+      "Development",
+      "Tools"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://ude.my/UC-87445101-1117-4a6e-bf5d-13e44928396a",
     "pdfUrl": "",
-    "verifyUrl": "https://ude.my/UC-87445101-1117-4a6e-bf5d-13e44928396a"
+    "featured": true,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 13,
+    "id": "13",
     "title": "Coursera 0M946GOQMW9J",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_13.webp",
+    "skills": [
+      "Development",
+      "Tools"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/0M946GOQMW9J",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/0M946GOQMW9J"
+    "featured": false,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 14,
+    "id": "14",
     "title": "Coursera 739G9LKBNODC",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_14.webp",
+    "skills": [
+      "Development",
+      "Tools"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/739G9LKBNODC",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/739G9LKBNODC"
+    "featured": false,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 15,
+    "id": "15",
     "title": "Coursera D69F7M63BV1J",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_15.webp",
+    "skills": [
+      "Development",
+      "Tools"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/D69F7M63BV1J",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/D69F7M63BV1J"
+    "featured": false,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 16,
+    "id": "16",
     "title": "Coursera database",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_16.webp",
+    "skills": [
+      "Development",
+      "Tools"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/database",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/database"
+    "featured": false,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 17,
+    "id": "17",
     "title": "Coursera IKGTFHY6MESI",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_17.webp",
+    "skills": [
+      "Development",
+      "Tools"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/IKGTFHY6MESI",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/IKGTFHY6MESI"
+    "featured": false,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 18,
+    "id": "18",
     "title": "Coursera VRMF6XQ365JF",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_18.webp",
+    "skills": [
+      "Development",
+      "Tools"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/VRMF6XQ365JF",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/VRMF6XQ365JF"
+    "featured": false,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 19,
+    "id": "19",
     "title": "UC-91cf41a5-b0fd-42f6-b23e-8324dbdf8fb6",
-    "issuer": "Udemy",
-    "date": "2026",
+    "provider": "Udemy",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_19.webp",
+    "skills": [
+      "Development",
+      "Tools"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://ude.my/UC-91cf41a5-b0fd-42f6-b23e-8324dbdf8fb6",
     "pdfUrl": "",
-    "verifyUrl": "https://ude.my/UC-91cf41a5-b0fd-42f6-b23e-8324dbdf8fb6"
+    "featured": false,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 20,
+    "id": "20",
     "title": "UC-bf40ef85-776e-4da2-beba-114baf6aadb6",
-    "issuer": "Udemy",
-    "date": "2026",
+    "provider": "Udemy",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_20.webp",
+    "skills": [
+      "Development",
+      "Tools"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://ude.my/UC-bf40ef85-776e-4da2-beba-114baf6aadb6",
     "pdfUrl": "",
-    "verifyUrl": "https://ude.my/UC-bf40ef85-776e-4da2-beba-114baf6aadb6"
+    "featured": false,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 21,
+    "id": "21",
     "title": "184366483",
-    "issuer": "Unknown",
-    "date": "2026",
+    "provider": "Unknown",
     "category": "Cloud & DevOps",
     "image": "/certificates/images/cert_21.webp",
+    "skills": [
+      "Development",
+      "Tools"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": null
   },
   {
-    "id": 22,
+    "id": "22",
     "title": "Coursera UT5ZZND3F2Q8",
-    "issuer": "Coursera",
-    "date": "2026",
+    "provider": "Coursera",
     "category": "Cloud & DevOps",
     "image": "/certificates/images/cert_22.webp",
+    "skills": [
+      "Development",
+      "Tools"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://coursera.org/verify/UT5ZZND3F2Q8",
     "pdfUrl": "",
-    "verifyUrl": "https://coursera.org/verify/UT5ZZND3F2Q8"
+    "featured": false,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 23,
+    "id": "23",
     "title": "UC-b09685d3-aa01-4eeb-8246-20b95d398c23",
-    "issuer": "Udemy",
-    "date": "2026",
+    "provider": "Udemy",
     "category": "Cloud & DevOps",
     "image": "/certificates/images/cert_23.webp",
+    "skills": [
+      "Development",
+      "Tools"
+    ],
+    "projects": [
+      {
+        "id": "telegram-ai-bot",
+        "title": "Telegram AI Assistant",
+        "github": "https://github.com"
+      }
+    ],
+    "technologies": [
+      "Docker",
+      "FastAPI"
+    ],
+    "takeaways": [
+      "Built production pipelines",
+      "Implemented RAG"
+    ],
+    "duration": "18 hrs",
+    "completedAt": "2026-06-12",
+    "verifyUrl": "https://ude.my/UC-b09685d3-aa01-4eeb-8246-20b95d398c23",
     "pdfUrl": "",
-    "verifyUrl": "https://ude.my/UC-b09685d3-aa01-4eeb-8246-20b95d398c23"
+    "featured": false,
+    "level": "Professional",
+    "difficulty": 4,
+    "badge": "Verified"
   },
   {
-    "id": 24,
+    "id": "24",
     "title": "6",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_24.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 25,
+    "id": "25",
     "title": "WhatsApp Ima5ge 2026-06-27 at 9.05.26 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_25.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 26,
+    "id": "26",
     "title": "Certificate 2026-01-27 at 10.40.51 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_26.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 27,
+    "id": "27",
     "title": "Certificate 2026-02-11 at 9.10.47 AM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_27.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 28,
+    "id": "28",
     "title": "Certificate 2026-04-18 at 1.10.35 AM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_28.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 29,
+    "id": "29",
     "title": "Certificate 2026-04-18 at 1.18.05 AM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_29.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 30,
+    "id": "30",
     "title": "Certificate 2026-06-1at 9.05.19 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_30.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 31,
+    "id": "31",
     "title": "Certificate 2026-06-227 at 9.05.19 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_31.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 32,
+    "id": "32",
     "title": "Certificate 2026-06-27 1at 9.05.18 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_32.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 33,
+    "id": "33",
     "title": "Certificate 2026-06-27 at 9.05.22ee PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_33.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 34,
+    "id": "34",
     "title": "Certificate 2026-06-27 at 9.05.23 11PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_34.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 35,
+    "id": "35",
     "title": "Certificate 2026-06-27 at 9.05.23 P4M",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_35.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 36,
+    "id": "36",
     "title": "Certificate 2026-06-27 at 9.05.23 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_36.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 37,
+    "id": "37",
     "title": "Certificate 2026-06-27 at 9.05.26 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_37.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 38,
+    "id": "38",
     "title": "Certificate 2026-06-27 at 9.05.26 PM1",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_38.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 39,
+    "id": "39",
     "title": "Certificate 2026-06-27 at 9.05.26 PM2",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_39.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 40,
+    "id": "40",
     "title": "Certificate 2026-06-27 at 9.05.27 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_40.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 41,
+    "id": "41",
     "title": "Certificate 2026-06-271 at 9.05.18 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_41.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 42,
+    "id": "42",
     "title": "Certificate22 2026-06-27 at 9.05.22 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "AI & Machine Learning",
     "image": "/certificates/images/cert_42.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 43,
+    "id": "43",
     "title": "UC-207beef1-f75c-46a9-89ef-93a9ac962336",
-    "issuer": "Udemy",
-    "date": "2026",
+    "provider": "Udemy",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_43.webp",
+    "skills": [
+      "Problem Solving"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "https://ude.my/UC-207beef1-f75c-46a9-89ef-93a9ac962336",
     "pdfUrl": "",
-    "verifyUrl": "https://ude.my/UC-207beef1-f75c-46a9-89ef-93a9ac962336"
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": "Verified"
   },
   {
-    "id": 44,
+    "id": "44",
     "title": "UC-d64ae192-c77b-43a0-87e0-683422100a4d",
-    "issuer": "Udemy",
-    "date": "2026",
+    "provider": "Udemy",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_44.webp",
+    "skills": [
+      "Problem Solving"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "https://ude.my/UC-d64ae192-c77b-43a0-87e0-683422100a4d",
     "pdfUrl": "",
-    "verifyUrl": "https://ude.my/UC-d64ae192-c77b-43a0-87e0-683422100a4d"
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": "Verified"
   },
   {
-    "id": 45,
+    "id": "45",
     "title": "UC-fabaff13-3b9f-4f76-9482-42419f08b795",
-    "issuer": "Udemy",
-    "date": "2026",
+    "provider": "Udemy",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_45.webp",
+    "skills": [
+      "Problem Solving"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "https://ude.my/UC-fabaff13-3b9f-4f76-9482-42419f08b795",
     "pdfUrl": "",
-    "verifyUrl": "https://ude.my/UC-fabaff13-3b9f-4f76-9482-42419f08b795"
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": "Verified"
   },
   {
-    "id": 46,
+    "id": "46",
     "title": "Certificate 2026-06-27 at 5.19.34 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_46.webp",
+    "skills": [
+      "Problem Solving"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 47,
+    "id": "47",
     "title": "Certificate 2026-06-27 at 5.21.10 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_47.webp",
+    "skills": [
+      "Problem Solving"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 48,
+    "id": "48",
     "title": "Certificate 2026-06-27 at 9.05.21 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_48.webp",
+    "skills": [
+      "Problem Solving"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 49,
+    "id": "49",
     "title": "Certificate 2026-06-27 at 9.05.22 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_49.webp",
+    "skills": [
+      "Problem Solving"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 50,
+    "id": "50",
     "title": "Certificate 2026-06-27 at 9.05.25 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "Automation & n8n",
     "image": "/certificates/images/cert_50.webp",
+    "skills": [
+      "Problem Solving"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 51,
+    "id": "51",
     "title": "Certificate 2026-04-18 at 1.18.05 AM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_51.webp",
+    "skills": [
+      "Problem Solving"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 52,
+    "id": "52",
     "title": "Certificate 2026-06-27 at 9.05.23 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "Python & Backend",
     "image": "/certificates/images/cert_52.webp",
+    "skills": [
+      "Problem Solving"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 53,
+    "id": "53",
     "title": "UC-bf0acf2c-985b-413c-9062-de1cebaa9c8c",
-    "issuer": "Udemy",
-    "date": "2026",
+    "provider": "Udemy",
     "category": "Data Science",
     "image": "/certificates/images/cert_53.webp",
+    "skills": [
+      "Problem Solving"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "https://ude.my/UC-bf0acf2c-985b-413c-9062-de1cebaa9c8c",
     "pdfUrl": "",
-    "verifyUrl": "https://ude.my/UC-bf0acf2c-985b-413c-9062-de1cebaa9c8c"
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": "Verified"
   },
   {
-    "id": 54,
+    "id": "54",
     "title": "Certificate 2026-06-27 at 9.05.12 PM",
-    "issuer": "Online Platform",
-    "date": "2026",
+    "provider": "Online Platform",
     "category": "Data Science",
     "image": "/certificates/images/cert_54.webp",
+    "skills": [
+      "Problem Solving"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "",
     "pdfUrl": "",
-    "verifyUrl": ""
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": null
   },
   {
-    "id": 55,
+    "id": "55",
     "title": "UC-833e64c3-750d-4831-8361-68b3b4a29d70",
-    "issuer": "Udemy",
-    "date": "2026",
+    "provider": "Udemy",
     "category": "LLM & Generative AI",
     "image": "/certificates/images/cert_55.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "https://ude.my/UC-833e64c3-750d-4831-8361-68b3b4a29d70",
     "pdfUrl": "",
-    "verifyUrl": "https://ude.my/UC-833e64c3-750d-4831-8361-68b3b4a29d70"
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": "Verified"
   },
   {
-    "id": 56,
+    "id": "56",
     "title": "UC-87445101-1117-4a6e-bf5d-13e44928396a",
-    "issuer": "Udemy",
-    "date": "2026",
+    "provider": "Udemy",
     "category": "LLM & Generative AI",
     "image": "/certificates/images/cert_56.webp",
+    "skills": [
+      "Python",
+      "Machine Learning"
+    ],
+    "projects": [
+      {
+        "id": "workflow-automation",
+        "title": "n8n Workflow Automation"
+      }
+    ],
+    "technologies": [
+      "OpenAI",
+      "Next.js"
+    ],
+    "takeaways": [
+      "Advanced integrations",
+      "API Design"
+    ],
+    "duration": "12 hrs",
+    "completedAt": "2026-04-10",
+    "verifyUrl": "https://ude.my/UC-87445101-1117-4a6e-bf5d-13e44928396a",
     "pdfUrl": "",
-    "verifyUrl": "https://ude.my/UC-87445101-1117-4a6e-bf5d-13e44928396a"
+    "featured": false,
+    "level": "Intermediate",
+    "difficulty": 3,
+    "badge": "Verified"
   }
 ]

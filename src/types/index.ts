@@ -67,15 +67,34 @@ export interface Stat {
   suffix: string;
 }
 
-export interface Certificate {
-  id: number;
+export type Difficulty = 1 | 2 | 3 | 4 | 5;
+export type Level = 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert' | 'Professional' | 'Specialization';
+
+export interface RelatedProject {
+  id: string;
   title: string;
-  issuer: string;
-  date: string;
+  github?: string;
+  live?: string;
+}
+
+export interface Certificate {
+  id: string | number;
+  title: string;
+  provider: string;
   category: string;
   image?: string;
-  pdfUrl?: string;
+  skills: string[];
+  projects: RelatedProject[];
+  technologies: string[];
+  takeaways: string[];
+  duration: string;
+  completedAt: string; // ISO date string e.g., "2026-06-12"
   verifyUrl?: string;
+  pdfUrl?: string;
+  featured: boolean;
+  level: Level;
+  difficulty: Difficulty;
+  badge?: 'Verified' | 'Featured' | 'Professional' | 'Popular' | 'Top Pick' | 'Industry Recognized';
 }
 
 export type CertificateCategory = 'الكل' | 'AI & Machine Learning' | 'LLM & Generative AI' | 'Python & Backend' | 'Data Science' | 'Cloud & DevOps' | 'Automation & n8n';

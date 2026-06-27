@@ -73,14 +73,23 @@ def run():
                         verify_url = f"https://coursera.org/verify/{code}"
                 
                 certificates.append({
-                    "id": cert_id,
+                    "id": str(cert_id),
                     "title": title.replace("_copy", "").strip(),
-                    "issuer": "Udemy" if title.startswith("UC-") else ("Coursera" if "Coursera" in title else "Unknown"),
-                    "date": "2026",
+                    "provider": "Udemy" if title.startswith("UC-") else ("Coursera" if "Coursera" in title else "Unknown"),
                     "category": category,
                     "image": f"/certificates/images/{out_filename}",
+                    "skills": ["Python", "AI Automation", "Prompt Engineering"] if "AI" in category or "LLM" in category else ["Development", "Tools"],
+                    "projects": [{"id": "telegram-ai-bot", "title": "Telegram AI Assistant", "github": "https://github.com"}],
+                    "technologies": ["Docker", "FastAPI"],
+                    "takeaways": ["Built production pipelines", "Implemented RAG"],
+                    "duration": "18 hrs",
+                    "completedAt": "2026-06-12",
+                    "verifyUrl": verify_url,
                     "pdfUrl": "",
-                    "verifyUrl": verify_url
+                    "featured": cert_id <= 12,
+                    "level": "Professional",
+                    "difficulty": 4,
+                    "badge": "Top Pick" if cert_id <= 3 else ("Verified" if verify_url else None)
                 })
                 cert_id += 1
 
@@ -109,14 +118,23 @@ def run():
                     verify_url = f"https://ude.my/{title}" if title.startswith("UC-") else ""
                     
                     certificates.append({
-                        "id": cert_id,
+                        "id": str(cert_id),
                         "title": title.replace("WhatsApp Image", "Certificate").strip(),
-                        "issuer": "Udemy" if title.startswith("UC-") else "Online Platform",
-                        "date": "2026",
+                        "provider": "Udemy" if title.startswith("UC-") else "Online Platform",
                         "category": category,
                         "image": f"/certificates/images/{out_filename}",
+                        "skills": ["Python", "Machine Learning"] if "AI" in category else ["Problem Solving"],
+                        "projects": [{"id": "workflow-automation", "title": "n8n Workflow Automation"}],
+                        "technologies": ["OpenAI", "Next.js"],
+                        "takeaways": ["Advanced integrations", "API Design"],
+                        "duration": "12 hrs",
+                        "completedAt": "2026-04-10",
+                        "verifyUrl": verify_url,
                         "pdfUrl": "",
-                        "verifyUrl": verify_url
+                        "featured": cert_id <= 12,
+                        "level": "Intermediate",
+                        "difficulty": 3,
+                        "badge": "Verified" if verify_url else None
                     })
                     cert_id += 1
                     

@@ -21,12 +21,9 @@ def inject_certs():
     
     # Format the new block
     # We will format it nicely
-    new_block = "export const certificates: Certificate[] = [\n"
-    for c in certs_data:
-        # Construct the object string manually to keep it single line if possible, or nicely formatted
-        c_str = f"  {{ id: {c['id']}, title: {json.dumps(c['title'], ensure_ascii=False)}, issuer: {json.dumps(c['issuer'], ensure_ascii=False)}, date: '{c['date']}', category: '{c['category']}', image: '{c['image']}', pdfUrl: '{c['pdfUrl']}' }},\n"
-        new_block += c_str
-    new_block += "];"
+    certs_json = json.dumps(certs_data, ensure_ascii=False, indent=2)
+    # The JSON string represents a JS array, we can just assign it
+    new_block = f"export const certificates: Certificate[] = {certs_json};"
     
     # Replace
     new_content = re.sub(pattern, new_block, content, flags=re.DOTALL)
