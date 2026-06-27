@@ -152,15 +152,15 @@ export function Hero({ certificates }: { certificates: Certificate[] }) {
           </div>
 
           {/* What I Can Build (Dynamic) */}
-          <div className="mx-auto mb-16 max-w-5xl rounded-3xl border border-[#22D3EE]/20 bg-[#22D3EE]/5 p-8 backdrop-blur-md md:p-12 text-right">
-            <h3 className="mb-8 text-2xl font-bold text-white">ماذا تُمكّنني هذه الشهادات من البناء؟ (What These Certificates Enable Me To Build)</h3>
-            <div className="grid grid-cols-2 gap-x-8 gap-y-4 md:grid-cols-4">
+          <div className="mx-auto mb-16 max-w-5xl rounded-3xl border border-white/5 bg-white/5 p-8 backdrop-blur-md md:p-12 text-left" dir="ltr">
+            <h3 className="mb-8 text-2xl font-bold text-white">What I Can Build</h3>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:grid-cols-4">
               {dynamicBuildSkills.map((skill) => (
-                <div key={skill} className="flex items-center justify-end gap-3 text-white/90">
-                  <span className="font-semibold text-sm md:text-base">{skill}</span>
+                <div key={skill} className="flex items-center justify-start gap-3 text-white/90 whitespace-nowrap overflow-hidden">
                   <div className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[#22D3EE]/20 text-[#22D3EE] text-xs font-bold">
                     ✓
                   </div>
+                  <span className="font-semibold text-xs md:text-sm truncate">{skill}</span>
                 </div>
               ))}
             </div>
