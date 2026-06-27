@@ -25,9 +25,9 @@ export const colors = {
 // ─── Site Config ─────────────────────────────
 export const siteConfig = {
   name: 'Algorithm Cities',
-  title: 'مهندس بيانات وذكاء اصطناعي ومطور ويب متكامل (Data Science & AI Engineer, Full Stack Developer)',
+  title: 'AI Automation Engineer | مهندس أتمتة الذكاء الاصطناعي',
   description:
-    'مهندس متكامل في الذكاء الاصطناعي وبناء تطبيقات الويب الحديثة، متخصص في تعلم الآلة، التعلم العميق، والنماذج اللغوية الكبيرة.',
+    'أبني أنظمة ذكاء اصطناعي جاهزة للإنتاج، وكلاء ذكيين (AI Agents)، وأتمتة سير العمل باستخدام Python و FastAPI و n8n.',
   url: 'https://example.com',
   ogImage: '/og.png',
   locale: 'ar',
@@ -48,24 +48,19 @@ export const navItems: NavItem[] = [
 // ─── Services (What I Build) ─────────────────
 export const services: Service[] = [
   {
-    title: 'AI Automation Systems',
-    description: 'تطوير أنظمة أتمتة ذكية تعتمد على النماذج اللغوية الكبيرة (LLMs) لتبسيط العمليات المعقدة وتقليل التدخل البشري.',
+    title: 'AI Automation & Agents',
+    description: 'بناء وكلاء ذكيين (AI Agents) ونظم أتمتة متقدمة باستخدام LangChain و n8n وبوتات تليجرام وواتساب للشركات، مع أنظمة Multi-Agent قادرة على التعامل مع المهام المعقدة.',
     icon: 'brain',
   },
   {
-    title: 'Web Applications',
-    description: 'بناء تطبيقات ويب متكاملة وعالية الأداء باستخدام أحدث التقنيات مثل Next.js و React لضمان أفضل تجربة مستخدم.',
-    icon: 'layout',
-  },
-  {
-    title: 'Data & Analytics Solutions',
-    description: 'تصميم حلول متقدمة لتحليل البيانات واستخراج الرؤى الدقيقة التي تساعد في اتخاذ قرارات استراتيجية مبنية على البيانات.',
-    icon: 'database',
-  },
-  {
-    title: 'Workflow Automation',
-    description: 'أتمتة سير العمل باستخدام أدوات مثل n8n لربط الأنظمة المختلفة وزيادة الإنتاجية بشكل ملحوظ.',
+    title: 'LLM Engineering & RAG',
+    description: 'تصميم وتطوير أنظمة RAG (Retrieval-Augmented Generation) وهندسة البرمبتات (Prompt Engineering) وبناء تطبيقات متكاملة تعتمد على النماذج اللغوية الكبيرة مثل Gemini و GPT.',
     icon: 'cpu',
+  },
+  {
+    title: 'Backend & Infrastructure',
+    description: 'بناء خوادم خلفية عالية الأداء باستخدام FastAPI و Python، مع قواعد بيانات PostgreSQL و Redis، وإدارة البنية التحتية عبر Docker للتشغيل السلس في بيئات الإنتاج.',
+    icon: 'database',
   },
 ];
 
@@ -158,15 +153,15 @@ export const categories = ['الكل', 'الذكاء الاصطناعي & تعل
 
 // ─── Skills ──────────────────────────────────
 export const skills: Skill[] = [
-  { name: 'AI Automation', years: '3+ Years', icon: 'brain', category: 'الذكاء الاصطناعي والأتمتة' },
+  { name: 'AI Agents & LLMs', years: '3+ Years', icon: 'brain', category: 'الذكاء الاصطناعي والأتمتة' },
   { name: 'Python', years: '5+ Years', icon: 'terminal', category: 'الذكاء الاصطناعي والأتمتة' },
-  { name: 'n8n', years: '2+ Years', icon: 'workflow', category: 'الذكاء الاصطناعي والأتمتة' },
-  
-  { name: 'Next.js', years: '3+ Years', icon: 'layout', category: 'تطوير الويب' },
-  { name: 'React', years: '4+ Years', icon: 'code', category: 'تطوير الويب' },
-  
-  { name: 'PostgreSQL', years: '4+ Years', icon: 'database', category: 'البنية التحتية' },
-  { name: 'Docker', years: '3+ Years', icon: 'container', category: 'البنية التحتية' },
+  { name: 'n8n Automation', years: '2+ Years', icon: 'workflow', category: 'الذكاء الاصطناعي والأتمتة' },
+  { name: 'LangChain / RAG', years: '2+ Years', icon: 'cpu', category: 'الذكاء الاصطناعي والأتمتة' },
+  { name: 'FastAPI', years: '3+ Years', icon: 'code', category: 'Backend & Infrastructure' },
+  { name: 'PostgreSQL', years: '4+ Years', icon: 'database', category: 'Backend & Infrastructure' },
+  { name: 'Redis', years: '2+ Years', icon: 'database', category: 'Backend & Infrastructure' },
+  { name: 'Docker', years: '3+ Years', icon: 'container', category: 'Backend & Infrastructure' },
+  { name: 'Next.js / React', years: '3+ Years', icon: 'layout', category: 'تطوير الويب' },
 ];
 
 // ─── Social Links ────────────────────────────
@@ -179,10 +174,10 @@ export const socialLinks: SocialLink[] = [
 
 // ─── Stats (Achievements) ────────────────────
 export const stats: Stat[] = [
-  { label: 'مشاريع مكتملة', value: 50,   suffix: '+' },
-  { label: 'سنوات الخبرة',   value: 5,    suffix: '+' },
-  { label: 'عملاء سعداء',      value: 30,   suffix: '+' },
-  { label: 'نجوم جيتهاب',       value: 1200, suffix: '+' },
+  { label: 'أنظمة أتمتة ذكية', value: 30, suffix: '+' },
+  { label: 'سير عمل إنتاجي', value: 10, suffix: '+' },
+  { label: 'أنظمة LLM متكاملة', value: 5, suffix: '+' },
+  { label: 'سنوات الخبرة', value: 3, suffix: '+' },
 ];
 
 // ─── Process Steps ───────────────────────────

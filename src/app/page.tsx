@@ -135,15 +135,15 @@ export default function Home() {
               <SectionDivider />
               <About />
               <SectionDivider />
+              <Achievements />
+              <SectionDivider />
               <Services />
               <SectionDivider />
               <Projects />
               <SectionDivider />
-              <Outcomes />
-              <SectionDivider />
               <Skills />
               <SectionDivider />
-              <Achievements />
+              <Outcomes />
               <SectionDivider />
               <Process />
               <SectionDivider />

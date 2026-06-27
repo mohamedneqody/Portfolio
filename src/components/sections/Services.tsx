@@ -55,7 +55,7 @@ export default function Services() {
         </motion.p>
 
         {/* Services Grid */}
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-3">
           {services.map((service, idx) => {
             const Icon = iconMap[service.icon] ?? Cpu;
             return (

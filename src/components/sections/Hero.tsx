@@ -12,10 +12,10 @@ import FloatingElement from '@/components/ui/FloatingElement';
 // ──────────────────────────────────────────────
 
 const roles = [
-  'مهندس بيانات وذكاء اصطناعي',
-  'خبير تعلم الآلة والتعلم العميق',
-  'مطور نماذج لغوية كبيرة (LLMs)',
-  'مطور ويب متكامل',
+  'AI Automation Engineer',
+  'LLM Systems Developer',
+  'Multi-Agent Systems Architect',
+  'Python Backend Engineer',
 ];
 
 /** Staggered text fade variants */
