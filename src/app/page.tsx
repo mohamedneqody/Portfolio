@@ -20,6 +20,7 @@ import Services from "@/components/sections/Services";
 import Achievements from "@/components/sections/Achievements";
 import Process from "@/components/sections/Process";
 import Outcomes from "@/components/sections/Outcomes";
+import CertificationsBanner from "@/components/sections/CertificationsBanner";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -136,6 +137,8 @@ export default function Home() {
               <About />
               <SectionDivider />
               <Achievements />
+              <SectionDivider />
+              <CertificationsBanner />
               <SectionDivider />
               <Services />
               <SectionDivider />

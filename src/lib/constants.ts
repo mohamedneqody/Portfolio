@@ -223,15 +223,23 @@ export const outcomes: Outcome[] = [
   },
 ];
 
-// ─── Certificates ────────────────────────────
+export const certificateCategories: string[] = [
+  'الكل',
+  'AI & Machine Learning',
+  'LLM & Generative AI',
+  'Python & Backend',
+  'Data Science',
+  'Cloud & DevOps',
+  'Automation & n8n',
+];
+
 export const certificates: Certificate[] = [
-  {
-    title: 'AWS Solutions Architect معتمد',
-    issuer: 'Amazon Web Services',
-    date: '2025-03',
-    url: 'https://example.com/cert-1',
-    image: '/certs/cert-1.webp',
-  },
+  { id: 1, title: 'Machine Learning Specialization', issuer: 'Coursera - Stanford', date: '2026', category: 'AI & Machine Learning', image: '/certificates/images/cert-1.webp', pdfUrl: '/certificates/pdf/cert-1.pdf' },
+  { id: 2, title: 'Deep Learning Specialization', issuer: 'Coursera - deeplearning.ai', date: '2026', category: 'AI & Machine Learning', image: '/certificates/images/cert-2.webp', pdfUrl: '/certificates/pdf/cert-2.pdf' },
+  { id: 3, title: 'Generative AI with LLMs', issuer: 'AWS & deeplearning.ai', date: '2025', category: 'LLM & Generative AI', image: '/certificates/images/cert-3.webp', pdfUrl: '/certificates/pdf/cert-3.pdf' },
+  { id: 4, title: 'LangChain for LLM Application Development', issuer: 'deeplearning.ai', date: '2025', category: 'LLM & Generative AI', image: '/certificates/images/cert-4.webp', pdfUrl: '/certificates/pdf/cert-4.pdf' },
+  { id: 5, title: 'Python for Data Science & AI', issuer: 'IBM', date: '2024', category: 'Python & Backend', image: '/certificates/images/cert-5.webp', pdfUrl: '/certificates/pdf/cert-5.pdf' },
+  { id: 6, title: 'Google Data Analytics Professional', issuer: 'Google', date: '2025', category: 'Data Science', image: '/certificates/images/cert-6.webp', pdfUrl: '/certificates/pdf/cert-6.pdf' },
 ];
 
 // ─── Experience ──────────────────────────────

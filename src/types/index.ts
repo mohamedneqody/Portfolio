@@ -68,12 +68,17 @@ export interface Stat {
 }
 
 export interface Certificate {
+  id: number;
   title: string;
   issuer: string;
   date: string;
-  url?: string;
+  category: string;
   image?: string;
+  pdfUrl?: string;
+  verifyUrl?: string;
 }
+
+export type CertificateCategory = 'الكل' | 'AI & Machine Learning' | 'LLM & Generative AI' | 'Python & Backend' | 'Data Science' | 'Cloud & DevOps' | 'Automation & n8n';
 
 export interface Experience {
   title: string;
