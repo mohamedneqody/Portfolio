@@ -54,6 +54,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { Preloader } from "@/components/ui/Preloader";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -71,6 +73,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="min-h-screen bg-dark-bg text-text-primary font-sans overflow-x-hidden">
+        <Preloader />
         {/* Global Advanced 3D Background */}
         <BackgroundCanvas />
         
