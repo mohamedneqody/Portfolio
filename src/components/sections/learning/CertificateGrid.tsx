@@ -7,6 +7,8 @@ import { EnhancedModal } from "./EnhancedModal";
 import { Search, Filter, ChevronDown, Activity, FolderOpen } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
 
+import { motion, AnimatePresence } from "framer-motion";
+
 export function CertificateGrid({ certificates }: { certificates: Certificate[] }) {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -107,7 +109,7 @@ export function CertificateGrid({ certificates }: { certificates: Certificate[] 
                 className={`flex flex-col items-center justify-center p-6 rounded-2xl border transition-all ${
                   selectedProvider === category 
                     ? 'border-[#22D3EE] bg-[#22D3EE]/10 shadow-[0_0_20px_rgba(34,211,238,0.15)]' 
-                    : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/10'
+                    : 'border-white/5 bg-white/5 hover:border-white/10 hover:bg-white/10'
                 }`}
               >
                 <div className={`text-3xl font-black mb-2 ${selectedProvider === category ? 'text-[#22D3EE]' : 'text-white'}`}>
@@ -142,7 +144,7 @@ export function CertificateGrid({ certificates }: { certificates: Certificate[] 
               placeholder="Search by skill, technology, or title..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full rounded-full border border-white/10 bg-white/5 py-3 pl-12 pr-4 text-sm text-white placeholder-white/40 focus:border-[#22D3EE] focus:outline-none focus:ring-1 focus:ring-[#22D3EE]"
+              className="w-full rounded-full border border-white/5 bg-white/5 py-3 pl-12 pr-4 text-sm text-white placeholder-white/40 focus:border-[#7C3AED] focus:outline-none focus:ring-1 focus:ring-[#7C3AED] transition-colors"
             />
           </div>
           <div className="text-sm font-medium text-white/50">
@@ -153,11 +155,13 @@ export function CertificateGrid({ certificates }: { certificates: Certificate[] 
         {/* Grid or Empty State */}
         {filteredCerts.length > 0 ? (
           <>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {filteredCerts.slice(0, visibleCount).map((cert) => (
-                <CertificateCard key={cert.id} cert={cert} onClick={() => handleOpenCert(cert)} />
-              ))}
-            </div>
+            <motion.div layout className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              <AnimatePresence>
+                {filteredCerts.slice(0, visibleCount).map((cert) => (
+                  <CertificateCard key={cert.id} cert={cert} onClick={() => handleOpenCert(cert)} />
+                ))}
+              </AnimatePresence>
+            </motion.div>
 
             {/* Load More */}
             {visibleCount < filteredCerts.length && (

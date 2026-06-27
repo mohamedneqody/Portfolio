@@ -1,70 +1,35 @@
 "use client";
 
-import { motion, useMotionTemplate, useMotionValue, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 import { Certificate } from "@/types";
 import { Award, Clock, FileBadge, FolderGit2, ShieldCheck, Sparkles, Star } from "lucide-react";
-import React, { useRef } from "react";
+import React from "react";
+import Image from "next/image";
 
 export function CertificateCard({ cert, onClick }: { cert: Certificate; onClick: () => void }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  
-  const mouseXSpring = useSpring(x, { stiffness: 300, damping: 20 });
-  const mouseYSpring = useSpring(y, { stiffness: 300, damping: 20 });
-  
-  const rotateX = useMotionTemplate`${mouseYSpring}deg`;
-  const rotateY = useMotionTemplate`${mouseXSpring}deg`;
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!ref.current) return;
-    const rect = ref.current.getBoundingClientRect();
-    
-    const width = rect.width;
-    const height = rect.height;
-    
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
-    
-    const rotateXValue = ((mouseY / height) - 0.5) * -10; // Max rotation 10deg
-    const rotateYValue = ((mouseX / width) - 0.5) * 10;
-    
-    x.set(rotateYValue);
-    y.set(rotateXValue);
-  };
-
-  const handleMouseLeave = () => {
-    x.set(0);
-    y.set(0);
-  };
-
   const difficultyStars = Array(5).fill(0).map((_, i) => (
     <Star key={i} size={12} className={i < cert.difficulty ? "fill-[#22D3EE] text-[#22D3EE]" : "text-white/20"} />
   ));
 
   return (
     <motion.div
-      ref={ref}
-      style={{
-        rotateX,
-        rotateY,
-        transformStyle: "preserve-3d",
-      }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
+      layout
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.3 }}
       onClick={onClick}
       className="group relative h-full cursor-pointer"
     >
-      {/* Glow Effect */}
-      <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-br from-[#22D3EE]/0 via-[#7C3AED]/0 to-[#22D3EE]/0 opacity-0 blur-md transition-all duration-500 group-hover:from-[#22D3EE]/50 group-hover:via-[#7C3AED]/50 group-hover:to-[#22D3EE]/50 group-hover:opacity-100" />
+      {/* Glow Effect on Hover (Soft Purple/Cyan) */}
+      <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-[#7C3AED]/0 to-[#22D3EE]/0 opacity-0 blur-xl transition-all duration-700 group-hover:from-[#7C3AED]/30 group-hover:to-[#22D3EE]/30 group-hover:opacity-100" />
       
       <div 
-        className={`relative flex h-full flex-col overflow-hidden rounded-2xl border transition-colors group-hover:bg-[#0f0820] ${
+        className={`relative flex h-full flex-col overflow-hidden rounded-2xl border transition-all duration-300 transform group-hover:-translate-y-1.5 group-hover:shadow-[0_15px_35px_rgba(0,0,0,0.5)] ${
           cert.provider.toLowerCase().includes('google') || cert.provider.toLowerCase().includes('ibm')
-            ? 'border-[#22D3EE]/30 bg-[#0a0515]/80 group-hover:border-[#22D3EE]/60 shadow-[0_0_15px_rgba(34,211,238,0.1)] group-hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]'
-            : 'border-white/10 bg-[#0a0515] group-hover:border-white/20'
-        }`}
-        style={{ transform: "translateZ(30px)" }}
+            ? 'border-[#22D3EE]/20 bg-[#0a0515]/90 group-hover:border-[#7C3AED]/40'
+            : 'border-white/5 bg-[#0a0515]/80 group-hover:border-[#7C3AED]/40 group-hover:bg-[#0a0515]'
+        } backdrop-blur-md after:absolute after:inset-0 after:-translate-x-[150%] after:bg-gradient-to-r after:from-transparent after:via-white/10 after:to-transparent group-hover:after:animate-[sweep_0.7s_ease-in-out_1]`}
       >
         {/* Top Badge */}
         {cert.badge && (
@@ -74,13 +39,13 @@ export function CertificateCard({ cert, onClick }: { cert: Certificate; onClick:
         )}
 
         {cert.verifyUrl && !cert.badge && (
-          <div className="absolute left-3 top-3 z-10 flex items-center gap-1 rounded-full bg-[#22D3EE]/20 px-3 py-1 text-[10px] font-bold text-[#22D3EE] backdrop-blur-md border border-[#22D3EE]/30">
+          <div className="absolute left-3 top-3 z-10 flex items-center gap-1 rounded-full bg-white/5 px-3 py-1 text-[10px] font-bold text-white/70 backdrop-blur-md border border-white/10 group-hover:bg-[#22D3EE]/10 group-hover:text-[#22D3EE] group-hover:border-[#22D3EE]/30 transition-colors">
             <ShieldCheck size={12} /> Verified
           </div>
         )}
 
         {/* Provider Icon / Name */}
-        <div className="absolute right-3 top-3 z-10 flex items-center gap-1.5 rounded-full bg-black/60 px-3 py-1.5 text-[10px] font-bold text-white backdrop-blur-md border border-white/10">
+        <div className="absolute right-3 top-3 z-10 flex items-center gap-1.5 rounded-full bg-black/60 px-3 py-1.5 text-[10px] font-bold text-white backdrop-blur-md border border-white/5">
           {cert.provider.toLowerCase().includes("google") ? (
             <svg viewBox="0 0 24 24" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
           ) : cert.provider.toLowerCase().includes("ibm") ? (
@@ -94,15 +59,17 @@ export function CertificateCard({ cert, onClick }: { cert: Certificate; onClick:
         </div>
 
         {/* Thumbnail Image */}
-        <div className="relative h-40 w-full overflow-hidden bg-black">
+        <div className="relative h-40 w-full overflow-hidden bg-black/50">
           {cert.image ? (
-            <img
+            <Image
               src={cert.image}
               alt={cert.title}
-              className="h-full w-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-100"
+              width={400}
+              height={200}
+              className="h-full w-full object-cover opacity-60 transition-all duration-700 group-hover:opacity-100 group-hover:brightness-105 group-hover:contrast-105"
             />
           ) : (
-            <div className="flex h-full items-center justify-center bg-gradient-to-br from-[#7C3AED]/20 to-[#22D3EE]/20">
+            <div className="flex h-full items-center justify-center bg-gradient-to-br from-[#7C3AED]/10 to-[#22D3EE]/10">
               <Award size={40} className="text-white/20" />
             </div>
           )}
@@ -112,7 +79,7 @@ export function CertificateCard({ cert, onClick }: { cert: Certificate; onClick:
 
         {/* Content */}
         <div className="flex flex-1 flex-col p-5 text-right">
-          <h3 className="mb-2 text-lg font-bold text-white group-hover:text-[#22D3EE] transition-colors leading-snug line-clamp-2" style={{ transform: "translateZ(20px)" }}>
+          <h3 className="mb-2 text-lg font-bold text-white group-hover:text-[#7C3AED] transition-colors leading-snug line-clamp-2">
             {cert.title}
           </h3>
           
@@ -124,12 +91,12 @@ export function CertificateCard({ cert, onClick }: { cert: Certificate; onClick:
           </div>
 
           {/* Quick Stats */}
-          <div className="mt-auto grid grid-cols-3 gap-2 border-t border-white/10 pt-4 text-center text-xs font-medium text-white/70" style={{ transform: "translateZ(15px)" }}>
+          <div className="mt-auto grid grid-cols-3 gap-2 border-t border-white/5 pt-4 text-center text-xs font-medium text-white/50 group-hover:text-white/70 transition-colors">
             <div className="flex flex-col items-center justify-center gap-1">
               <Clock size={14} className="text-[#38BDF8]" />
               {cert.duration}
             </div>
-            <div className="flex flex-col items-center justify-center gap-1 border-x border-white/10">
+            <div className="flex flex-col items-center justify-center gap-1 border-x border-white/5">
               <FileBadge size={14} className="text-[#7C3AED]" />
               {cert.skills.length} Skills
             </div>
