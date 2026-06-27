@@ -55,6 +55,7 @@ export const metadata: Metadata = {
 };
 
 import { Preloader } from "@/components/ui/Preloader";
+import { MouseEffects } from "@/components/ui/MouseEffects";
 
 export default function RootLayout({
   children,
@@ -74,6 +75,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-dark-bg text-text-primary font-sans overflow-x-hidden">
         <Preloader />
+        <MouseEffects />
         {/* Global Advanced 3D Background */}
         <BackgroundCanvas />
         

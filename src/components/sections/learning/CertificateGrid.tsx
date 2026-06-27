@@ -93,8 +93,8 @@ export function CertificateGrid({ certificates }: { certificates: Certificate[] 
   }, [certificates, searchQuery, selectedProvider]);
 
   return (
-    <section className="py-24 bg-[#05020a]" id="certificates-grid">
-      <div className="container mx-auto px-6">
+    <section className="relative py-24" id="certificates-grid">
+      <div className="container relative z-10 mx-auto px-6">
         
         {/* Dynamic Category Dashboard */}
         <div className="mb-16">
