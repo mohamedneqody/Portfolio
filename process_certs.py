@@ -19,7 +19,8 @@ def run():
         'Automation',
         'Backend_and_Databases',
         'DevOps_and_Linux',
-        'Web_Development'
+        'Web_Development',
+        'LLM_and_Generative_AI'
     ]
     
     category_map = {
@@ -27,7 +28,8 @@ def run():
         'Automation': 'Automation & n8n',
         'Backend_and_Databases': 'Python & Backend',
         'DevOps_and_Linux': 'Cloud & DevOps',
-        'Web_Development': 'Data Science' # using Data Science as Web is not strictly there, wait we can add Web_Development to categories
+        'Web_Development': 'Data Science',
+        'LLM_and_Generative_AI': 'LLM & Generative AI'
     }
 
     try:
