@@ -50,10 +50,43 @@ export interface Outcome {
   description: string;
 }
 
-export interface ProcessStep {
-  number: string;
+export interface ArchitectureNode {
+  name: string;
+  icon?: string; // Optional icon name/emoji
+}
+
+export interface Decision {
+  name: string;
+  why: string;
+}
+
+export interface Challenge {
+  problem: string;
+  solution: string;
+}
+
+export interface TechGroup {
+  category: string;
+  technologies: string[];
+}
+
+export interface PipelineProjectRef {
+  id: number;
+  title: string;
+}
+
+export interface PipelineStep {
+  id: string;
   title: string;
   description: string;
+  duration?: string;
+  color?: string;
+  architecture?: ArchitectureNode[];
+  challenges?: Challenge[];
+  decisionMatrix?: Decision[];
+  deliverables?: string[];
+  linkedProjects?: PipelineProjectRef[];
+  technologies?: TechGroup[];
 }
 
 export interface SocialLink {

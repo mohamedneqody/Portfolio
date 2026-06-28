@@ -17,9 +17,9 @@ import Contact from "@/components/sections/Contact";
 import SectionDivider from "@/components/layout/SectionDivider";
 
 import Services from "@/components/sections/Services";
-import Achievements from "@/components/sections/Achievements";
-import Process from "@/components/sections/Process";
-import Outcomes from "@/components/sections/Outcomes";
+// import Achievements from "@/components/sections/Achievements";
+import Pipeline from "@/components/Pipeline/Pipeline";
+// import Outcomes from "@/components/sections/Outcomes";
 import CertificationsBanner from "@/components/sections/CertificationsBanner";
 
 export default function Home() {
@@ -136,19 +136,15 @@ export default function Home() {
               <SectionDivider />
               <About />
               <SectionDivider />
-              <Achievements />
+              <Projects />
               <SectionDivider />
-              <CertificationsBanner />
+              <Pipeline />
               <SectionDivider />
               <Services />
               <SectionDivider />
-              <Projects />
-              <SectionDivider />
               <Skills />
               <SectionDivider />
-              <Outcomes />
-              <SectionDivider />
-              <Process />
+              <CertificationsBanner />
               <SectionDivider />
               <Contact />
             </main>
