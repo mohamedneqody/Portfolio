@@ -154,17 +154,27 @@ export const categories = ['الكل', 'الذكاء الاصطناعي & تعل
 
 // ─── Skills ──────────────────────────────────
 export const skills: Skill[] = [
+  // AI & Automation
   { name: 'AI Agents & LLMs', years: '3+ Years', icon: 'brain', category: 'الذكاء الاصطناعي والأتمتة' },
   { name: 'Python', years: '5+ Years', icon: 'terminal', category: 'الذكاء الاصطناعي والأتمتة' },
   { name: 'n8n Automation', years: '2+ Years', icon: 'workflow', category: 'الذكاء الاصطناعي والأتمتة' },
   { name: 'LangChain / RAG', years: '2+ Years', icon: 'cpu', category: 'الذكاء الاصطناعي والأتمتة' },
   { name: 'Multi-Agent Systems', years: '2+ Years', icon: 'workflow', category: 'الذكاء الاصطناعي والأتمتة' },
   { name: 'Computer Vision & OCR', years: '3+ Years', icon: 'brain', category: 'الذكاء الاصطناعي والأتمتة' },
-  { name: 'Machine Learning', years: '4+ Years', icon: 'cpu', category: 'الذكاء الاصطناعي والأتمتة' },
+
+  // Machine Learning & Data Science
+  { name: 'Machine Learning & Scikit-Learn', years: '4+ Years', icon: 'brain', category: 'تعلم الآلة وعلوم البيانات' },
+  { name: 'Deep Learning & NNs', years: '3+ Years', icon: 'cpu', category: 'تعلم الآلة وعلوم البيانات' },
+  { name: 'Data & Feature Eng.', years: '4+ Years', icon: 'database', category: 'تعلم الآلة وعلوم البيانات' },
+  { name: 'Model Eval & Tuning', years: '4+ Years', icon: 'terminal', category: 'تعلم الآلة وعلوم البيانات' },
+
+  // Backend & Infrastructure
   { name: 'FastAPI', years: '3+ Years', icon: 'code', category: 'Backend & Infrastructure' },
   { name: 'PostgreSQL', years: '4+ Years', icon: 'database', category: 'Backend & Infrastructure' },
   { name: 'Redis', years: '2+ Years', icon: 'database', category: 'Backend & Infrastructure' },
   { name: 'Docker', years: '3+ Years', icon: 'container', category: 'Backend & Infrastructure' },
+
+  // Web Development
   { name: 'Next.js / React', years: '3+ Years', icon: 'layout', category: 'تطوير الويب' },
 ];
 
