@@ -242,12 +242,11 @@ export default function Hero() {
         </div>
 
         {/* Typing role */}
-        <motion.div variants={child} className="mb-8 flex flex-row-reverse items-center justify-center gap-2">
-          <span className="text-xl font-light text-white/70 sm:text-2xl">أنا</span>
-          <span className="inline-block text-right text-xl font-semibold text-highlight/80 sm:text-2xl" dir="rtl">
+        <motion.div variants={child} className="mb-8 flex items-center justify-center gap-2">
+          <span className="inline-block text-xl font-semibold text-highlight/80 sm:text-2xl" dir="ltr">
             {currentRole.slice(0, charIndex)}
             <span
-              className="mr-0.5 inline-block w-[2px] animate-[blink_1s_step-end_infinite] bg-accent align-middle"
+              className="ml-0.5 inline-block w-[2px] animate-[blink_1s_step-end_infinite] bg-accent align-middle"
               style={{ height: '1.2em' }}
             />
           </span>
