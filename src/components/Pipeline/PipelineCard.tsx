@@ -45,12 +45,6 @@ export default function PipelineCard({ step, isActive, isDimmed, onClick }: Pipe
             <motion.p layout className="text-sm font-medium text-white/50 mb-3" dir="auto">
               {step.description}
             </motion.p>
-            {step.duration && (
-              <motion.div layout className="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/5 px-3 py-1 text-xs text-white/60">
-                <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: step.color }} />
-                {step.duration}
-              </motion.div>
-            )}
           </div>
           
           <motion.div
