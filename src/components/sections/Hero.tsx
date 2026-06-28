@@ -258,21 +258,7 @@ export default function Hero() {
           {siteConfig.description}
         </motion.p>
 
-        {/* CTA Buttons */}
-        <motion.div variants={child} className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <MagneticButton href="#contact" strength={0.2} className="bg-[#38BDF8] hover:bg-[#0284C7] shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all">
-            لنتعاون معاً
-          </MagneticButton>
-          <motion.a 
-            href="/cv.pdf" 
-            download
-            className="inline-flex items-center justify-center rounded-xl border border-white/20 px-8 py-3.5 text-base font-bold text-white transition-all hover:bg-white/5 hover:border-[#38BDF8]/60"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            تحميل الـ CV
-          </motion.a>
-        </motion.div>
+
       </motion.div>
 
       {/* ── Scroll-down indicator ────────────────── */}
