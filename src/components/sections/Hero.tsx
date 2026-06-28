@@ -12,7 +12,6 @@ import FloatingElement from '@/components/ui/FloatingElement';
 // ──────────────────────────────────────────────
 
 const roles = [
-  'AI Automation Engineer',
   'LLM Systems Developer',
   'Multi-Agent Systems Architect',
   'Python Backend Engineer',

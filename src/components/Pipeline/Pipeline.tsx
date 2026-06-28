@@ -45,14 +45,14 @@ export default function Pipeline() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 hidden md:flex items-center justify-between rounded-2xl bg-white/5 border border-white/10 p-1"
+          className="mb-16 hidden md:flex items-center justify-between rounded-2xl bg-white/5 border border-white/10 p-2"
         >
           {['Business Goal', 'Technical Strategy', 'Execution', 'Production'].map((layer, idx, arr) => (
             <div key={layer} className="flex items-center flex-1">
-              <div className={`text-center py-3 px-4 flex-1 text-sm font-semibold tracking-wider ${idx === 2 ? 'text-white' : 'text-white/40'}`}>
+              <div className={`text-center py-2 px-4 flex-1 text-sm font-semibold tracking-wider rounded-xl transition-colors ${idx === 2 ? 'bg-white/10 text-white shadow-lg' : 'text-white/40'}`}>
                 {layer}
               </div>
-              {idx < arr.length - 1 && <span className="text-white/10">➔</span>}
+              {idx < arr.length - 1 && <span className="text-white/10 mx-2">➔</span>}
             </div>
           ))}
         </motion.div>
