@@ -20,6 +20,7 @@ export interface Project {
   description: string;
   longDescription: string;
   image: string;
+  demoVideo?: string;
   tags: string[];
   category: string;
   liveUrl?: string;

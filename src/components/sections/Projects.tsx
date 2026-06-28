@@ -40,10 +40,25 @@ function ProjectCard({
         <GlassCard hover={true} className="group flex h-full flex-col lg:flex-row overflow-hidden p-0 transition-all duration-500 hover:bg-[rgba(56,189,248,0.03)] border border-white/5 hover:border-[#38BDF8]/30 shadow-none hover:shadow-[0_0_40px_rgba(56,189,248,0.1)]">
           {/* Image area with Zoom & Overlay */}
           <div className="relative w-full lg:w-1/2 h-64 lg:h-auto overflow-hidden cursor-pointer" onClick={onClick}>
-            {/* ✏️ REPLACE GRADIENT WITH ACTUAL PROJECT IMAGES */}
-            <motion.div
-              className="h-full w-full bg-gradient-to-br from-[#7C3AED] via-[#38BDF8] to-[#050510] transition-transform duration-700 ease-out group-hover:scale-105"
-            />
+            {project.demoVideo ? (
+              <video 
+                src={project.demoVideo}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+            ) : project.image ? (
+              <div
+                className="h-full w-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+                style={{ backgroundImage: `url(${project.image})` }}
+              />
+            ) : (
+              <motion.div
+                className="h-full w-full bg-gradient-to-br from-[#7C3AED] via-[#38BDF8] to-[#050510] transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+            )}
             
             {/* Animated Overlay */}
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
@@ -117,9 +132,25 @@ function ProjectCard({
         <GlassCard hover={true} className="flex h-full flex-col overflow-hidden p-0 transition-all duration-300 hover:bg-[rgba(56,189,248,0.05)] border border-white/5 hover:border-[#38BDF8]/30">
           {/* Image area */}
           <div className="relative w-full h-56 overflow-hidden cursor-pointer" onClick={onClick}>
-            <motion.div
-              className="h-full w-full bg-gradient-to-br from-[#7C3AED] via-[#1a0a2e] to-[#22D3EE] transition-transform duration-700 ease-out group-hover:scale-110"
-            />
+            {project.demoVideo ? (
+              <video 
+                src={project.demoVideo}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+              />
+            ) : project.image ? (
+              <div
+                className="h-full w-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-110"
+                style={{ backgroundImage: `url(${project.image})` }}
+              />
+            ) : (
+              <motion.div
+                className="h-full w-full bg-gradient-to-br from-[#7C3AED] via-[#1a0a2e] to-[#22D3EE] transition-transform duration-700 ease-out group-hover:scale-110"
+              />
+            )}
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
               <span className="translate-y-4 rounded-full border border-[#38BDF8]/50 bg-[#38BDF8]/20 px-6 py-2 text-sm font-bold text-white shadow-[0_0_15px_rgba(56,189,248,0.4)] transition-transform duration-300 group-hover:translate-y-0">
                 عرض التفاصيل

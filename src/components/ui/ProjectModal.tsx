@@ -86,17 +86,28 @@ export default function ProjectModal({
               <X size={20} />
             </motion.button>
 
-            {/* Project Image */}
+            {/* Project Image/Video */}
             <div className="relative h-56 w-full overflow-hidden rounded-t-2xl sm:h-72">
-              <div
-                className="h-full w-full bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${project.image})`,
-                  backgroundColor: "rgba(168,85,247,0.5)",
-                }}
-              />
+              {project.demoVideo ? (
+                <video 
+                  src={project.demoVideo}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full object-cover"
+                />
+              ) : (
+                <div
+                  className="h-full w-full bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${project.image})`,
+                    backgroundColor: "rgba(168,85,247,0.5)",
+                  }}
+                />
+              )}
               {/* Image overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(124,58,237,0.9)] via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(124,58,237,0.9)] via-transparent to-transparent pointer-events-none" />
 
               {/* Year badge */}
               <span className="absolute bottom-4 left-6 rounded-full bg-[rgba(124,58,237,0.6)] px-3 py-1 text-xs font-medium text-white/80 backdrop-blur-sm">

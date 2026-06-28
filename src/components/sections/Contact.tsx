@@ -67,8 +67,8 @@ export default function Contact() {
               </div>
               <div className="text-right flex-1">
                 <h4 className="mb-1 font-semibold text-white">البريد الإلكتروني</h4>
-                <a href="mailto:hello@example.com" className="text-sm text-white/60 hover:text-[#38BDF8] transition-colors font-mono">
-                  hello@example.com
+                <a href="mailto:mohameb.eslam460@gmail.com" className="text-sm text-white/60 hover:text-[#38BDF8] transition-colors font-mono">
+                  mohameb.eslam460@gmail.com
                 </a>
               </div>
             </GlassCard>
@@ -80,27 +80,13 @@ export default function Contact() {
               <div className="text-right flex-1">
                 <h4 className="mb-1 font-semibold text-white">شبكات التواصل</h4>
                 <div className="flex justify-end gap-4 mt-2">
-                  <a href="#" aria-label="Twitter/X" className="text-white/50 hover:text-[#38BDF8] transition-colors"><MessageCircle size={20} /></a>
+                  <a href="https://wa.me/201559308442" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-[#38BDF8] transition-colors"><MessageCircle size={20} /></a>
                   <a href="#" aria-label="LinkedIn" className="text-white/50 hover:text-[#38BDF8] transition-colors"><Briefcase size={20} /></a>
                   <a href="#" aria-label="GitHub" className="text-white/50 hover:text-[#38BDF8] transition-colors"><GitBranch size={20} /></a>
                 </div>
               </div>
             </GlassCard>
 
-            {/* CV Download Card */}
-            <GlassCard hover={true} className="flex items-center justify-between gap-6 p-6 transition-colors duration-300 hover:bg-[#38BDF8]/10 border border-white/5 hover:border-[#38BDF8]/30 cursor-pointer">
-              <div className="text-right flex-1">
-                <h4 className="mb-1 font-semibold text-white">السيرة الذاتية (CV)</h4>
-                <p className="text-sm text-white/50">قم بتحميل نسخة بصيغة PDF</p>
-              </div>
-              <a 
-                href="/cv.pdf" 
-                download 
-                className="flex items-center justify-center rounded-xl bg-[#38BDF8]/20 px-6 py-3 text-sm font-bold text-[#38BDF8] transition-colors hover:bg-[#38BDF8] hover:text-[#050510]"
-              >
-                تحميل
-              </a>
-            </GlassCard>
           </motion.div>
 
           {/* Form */}

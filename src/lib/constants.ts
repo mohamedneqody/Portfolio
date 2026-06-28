@@ -68,22 +68,23 @@ export const services: Service[] = [
 export const projects: Project[] = [
   {
     id: 4,
-    title: 'نظام Multi-Agent AI للمؤسسات (تليجرام)',
+    title: 'Enterprise Multi-Agent AI Assistant',
     description:
-      'مساعد ذكاء اصطناعي متعدد الوكلاء مصمم للشركات، مبني على بنية Router-Agent مع نظام طوابير وكاش ذكي.',
+      'A highly scalable, production-ready AI assistant powered by a Multi-Agent architecture. It intelligently routes user requests to specialized AI models.',
     longDescription:
-      'نظام Enterprise-grade مبني على n8n يستخدم هندسة Multi-Agent Architecture لتوجيه استفسارات المستخدمين تلقائياً للوكيل المناسب (Code Agent للبرمجة، Vision Agent لتحليل الصور، Search Agent للبحث في الإنترنت، Creative Agent للكتابة الإبداعية). يتضمن نظام طوابير Redis لإدارة آلاف الرسائل المتزامنة، وكاش ذكي لتقليل تكلفة API بنسبة 40%، وخوارزمية تحويل الردود الطويلة (أكثر من 4000 حرف) إلى ملفات Markdown تلقائياً.',
-    image: '/projects/project-1.webp',
-    tags: ['n8n', 'LangChain', 'Redis', 'PostgreSQL', 'Gemini AI', 'Telegram Bot API'],
+      'Engineered an enterprise-grade AI assistant capable of handling complex, multi-step workflows automatically. The system acts as a central orchestrator, analyzing incoming user intents and routing them to specialized AI agents (Code, Vision, Search, Creative, and Multi-Step Reasoning). Built with n8n, Node.js, Redis for short-term memory and queuing, and PostgreSQL for metrics and state.',
+    image: '/projects/multi-agent/screenshot-1.png',
+    demoVideo: '/projects/multi-agent/demo.mp4',
+    tags: ['n8n', 'Node.js', 'Redis', 'PostgreSQL', 'Gemini AI', 'Telegram Bot API'],
     category: 'الذكاء الاصطناعي & تعلم الآلة',
     liveUrl: 'https://t.me/YourBotUsername',
     githubUrl: 'https://github.com/username/enterprise-ai-agent',
     year: '2026',
     caseStudy: {
-      problem: 'البوتات التقليدية تتوقف تحت الضغط (Rate Limits)، ولا تفرق بين أنواع الأسئلة المختلفة، وتكلفة استدعاء نماذج الذكاء الاصطناعي مرتفعة جداً.',
-      solution: 'بناء نظام Router ذكي يوجه كل سؤال للوكيل المتخصص، مع نظام طوابير Redis يمنع التوقف، وكاش ذكي يخفض التكلفة بنسبة 40%.',
-      tech: 'n8n (Workflow Engine), LangChain (AI Agents), Redis (Queue & Cache), PostgreSQL (Memory & Metrics), Gemini 2.5 Pro/Flash.',
-      result: 'نظام يتعامل مع آلاف المستخدمين المتزامنين بدون توقف، مع تقليل تكلفة API بنسبة 40% وتحويل الردود الطويلة لملفات تلقائياً.',
+      problem: 'Traditional bots fail under high loads (rate limits), cannot distinguish between diverse tasks like coding vs image analysis, and incur high API costs due to lack of caching.',
+      solution: 'Developed an intelligent Router agent that delegates tasks to specialized sub-agents. Added a "Reflection Agent" to self-correct responses. Implemented Redis queue and caching layers.',
+      tech: 'n8n (Orchestration), Gemini 2.5 Pro (Vision & Core Logic), Redis (Queue/Cache), PostgreSQL (Memory), SearXNG (Web Search).',
+      result: 'Capable of handling thousands of concurrent users flawlessly, with 40% reduced API costs and highly accurate, context-aware responses.',
     }
   },
   {
@@ -168,8 +169,8 @@ export const skills: Skill[] = [
 export const socialLinks: SocialLink[] = [
   { name: 'GitHub',   url: 'https://github.com/username',          icon: 'github' },
   { name: 'LinkedIn', url: 'https://linkedin.com/in/username',     icon: 'linkedin' },
-  { name: 'Twitter',  url: 'https://twitter.com/username',         icon: 'twitter' },
-  { name: 'Email',    url: 'mailto:hello@example.com',             icon: 'mail' },
+  { name: 'WhatsApp', url: 'https://wa.me/201559308442',           icon: 'message-circle' },
+  { name: 'Email',    url: 'mailto:mohameb.eslam460@gmail.com',    icon: 'mail' },
 ];
 
 // ─── Stats (Achievements) ────────────────────
