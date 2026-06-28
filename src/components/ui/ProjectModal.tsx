@@ -70,9 +70,9 @@ export default function ProjectModal({
             className="
               relative w-full max-w-2xl max-h-[90vh] overflow-y-auto
               rounded-2xl
-              bg-[rgba(124,58,237,0.8)] backdrop-blur-xl
+              bg-[#0a0a1a]/95 backdrop-blur-xl
               border border-white/10
-              shadow-2xl shadow-black/40
+              shadow-2xl shadow-black/60
             "
           >
             {/* Close Button */}
@@ -87,7 +87,7 @@ export default function ProjectModal({
             </motion.button>
 
             {/* Project Image/Video */}
-            <div className="relative h-56 w-full overflow-hidden rounded-t-2xl sm:h-72">
+            <div className="relative h-56 w-full overflow-hidden rounded-t-2xl sm:h-72 bg-black">
               {project.demoVideo ? (
                 <video 
                   src={project.demoVideo}
@@ -95,22 +95,21 @@ export default function ProjectModal({
                   loop
                   muted
                   playsInline
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain"
                 />
               ) : (
                 <div
-                  className="h-full w-full bg-cover bg-center"
+                  className="h-full w-full bg-cover bg-top"
                   style={{
                     backgroundImage: `url(${project.image})`,
-                    backgroundColor: "rgba(168,85,247,0.5)",
                   }}
                 />
               )}
               {/* Image overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(124,58,237,0.9)] via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a1a] via-transparent to-transparent pointer-events-none" />
 
               {/* Year badge */}
-              <span className="absolute bottom-4 left-6 rounded-full bg-[rgba(124,58,237,0.6)] px-3 py-1 text-xs font-medium text-white/80 backdrop-blur-sm">
+              <span className="absolute bottom-4 left-6 rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white backdrop-blur-md border border-white/10">
                 {project.year}
               </span>
             </div>
@@ -136,20 +135,20 @@ export default function ProjectModal({
 
               {/* Case Study Grid */}
               {project.caseStudy && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-right bg-black/20 p-6 rounded-2xl border border-white/5">
-                  <div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 bg-white/5 p-6 rounded-2xl border border-white/5">
+                  <div dir="auto">
                     <h4 className="text-white/50 text-xs font-bold uppercase tracking-widest mb-2">المشكلة (Problem)</h4>
                     <p className="text-white/80 leading-relaxed text-sm">{project.caseStudy.problem}</p>
                   </div>
-                  <div>
+                  <div dir="auto">
                     <h4 className="text-white/50 text-xs font-bold uppercase tracking-widest mb-2">الحل (Solution)</h4>
                     <p className="text-white/80 leading-relaxed text-sm">{project.caseStudy.solution}</p>
                   </div>
-                  <div>
+                  <div dir="auto">
                     <h4 className="text-white/50 text-xs font-bold uppercase tracking-widest mb-2">التقنيات (Tech)</h4>
                     <p className="text-white/80 leading-relaxed text-sm">{project.caseStudy.tech}</p>
                   </div>
-                  <div>
+                  <div dir="auto">
                     <h4 className="text-[#38BDF8]/80 text-xs font-bold uppercase tracking-widest mb-2">النتيجة (Result)</h4>
                     <p className="text-[#38BDF8] font-bold leading-relaxed text-base">{project.caseStudy.result}</p>
                   </div>
