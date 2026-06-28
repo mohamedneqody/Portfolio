@@ -11,7 +11,6 @@ import type {
   Experience,
   Service,
   Outcome,
-  ProcessStep,
 } from '@/types';
 
 // ─── Color Palette (White / Gray theme) ───────
@@ -192,30 +191,6 @@ export const stats: Stat[] = [
   { label: 'سير عمل إنتاجي', value: 10, suffix: '+' },
   { label: 'أنظمة LLM متكاملة', value: 5, suffix: '+' },
   { label: 'سنوات الخبرة', value: 3, suffix: '+' },
-];
-
-// ─── Process Steps ───────────────────────────
-export const processSteps: ProcessStep[] = [
-  {
-    number: '01',
-    title: 'الاكتشاف (Discovery)',
-    description: 'فهم عميق لمشكلة العمل وجمع المتطلبات وتحليل البنية التحتية الحالية.',
-  },
-  {
-    number: '02',
-    title: 'التخطيط (Planning)',
-    description: 'رسم المعمارية التقنية، اختيار الأدوات المناسبة، وتحديد خريطة الطريق للتنفيذ.',
-  },
-  {
-    number: '03',
-    title: 'التطوير (Development)',
-    description: 'كتابة كود نظيف وقابل للتوسع مع بناء نماذج الذكاء الاصطناعي ودمجها.',
-  },
-  {
-    number: '04',
-    title: 'التسليم (Delivery)',
-    description: 'اختبار النظام بالكامل، إطلاقه على خوادم الإنتاج، وتقديم الدعم الفني اللازم.',
-  },
 ];
 
 // ─── Outcomes (Selected Results) ─────────────

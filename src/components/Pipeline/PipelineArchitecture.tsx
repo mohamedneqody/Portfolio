@@ -1,8 +1,8 @@
 import { ArchitectureNode } from '@/types';
 import { motion } from 'framer-motion';
-import { ArrowRight, Box, Brain, Database, FileJson, Layout, Network, Webhook } from 'lucide-react';
+import { ArrowRight, Box, Brain, Database, FileJson, Layout, Network, Webhook, LucideIcon } from 'lucide-react';
 
-const iconMap: Record<string, React.ElementType> = {
+const iconMap: Record<string, LucideIcon> = {
   webhook: Webhook,
   brain: Brain,
   workflow: Network,
