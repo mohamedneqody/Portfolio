@@ -49,17 +49,17 @@ export const navItems: NavItem[] = [
 export const services: Service[] = [
   {
     title: 'AI Automation & Agents',
-    description: 'بناء وكلاء ذكيين (AI Agents) ونظم أتمتة متقدمة باستخدام LangChain و n8n وبوتات تليجرام وواتساب للشركات، مع أنظمة Multi-Agent قادرة على التعامل مع المهام المعقدة.',
+    description: 'بناء وكلاء ذكيين (AI Agents) ونظم أتمتة متقدمة باستخدام LangChain و n8n وبوتات WhatsApp و Telegram للشركات، مع معمارية Multi-Agent (Enterprise AI Systems) قادرة على التعامل مع المهام المعقدة.',
     icon: 'brain',
   },
   {
     title: 'LLM Engineering & RAG',
-    description: 'تصميم وتطوير أنظمة RAG (Retrieval-Augmented Generation) وهندسة البرمبتات (Prompt Engineering) وبناء تطبيقات متكاملة تعتمد على النماذج اللغوية الكبيرة مثل Gemini و GPT.',
+    description: 'تصميم وتطوير أنظمة RAG (Retrieval-Augmented Generation) مع Vector Search، وهندسة البرمبتات (Prompt Engineering) وبناء تطبيقات متكاملة تعتمد على النماذج اللغوية الكبيرة مثل Gemini و GPT.',
     icon: 'cpu',
   },
   {
     title: 'Backend & Infrastructure',
-    description: 'بناء خوادم خلفية عالية الأداء باستخدام FastAPI و Python، مع قواعد بيانات PostgreSQL و Redis، وإدارة البنية التحتية عبر Docker للتشغيل السلس في بيئات الإنتاج.',
+    description: 'بناء خوادم خلفية عالية الأداء وقابلة للتوسع (Scalable Systems) باستخدام FastAPI و Python، وإدارة الـ Queues عبر Redis، مع قواعد بيانات PostgreSQL، والبنية التحتية عبر Docker للتشغيل السلس في بيئات الإنتاج.',
     icon: 'database',
   },
 ];
@@ -158,6 +158,9 @@ export const skills: Skill[] = [
   { name: 'Python', years: '5+ Years', icon: 'terminal', category: 'الذكاء الاصطناعي والأتمتة' },
   { name: 'n8n Automation', years: '2+ Years', icon: 'workflow', category: 'الذكاء الاصطناعي والأتمتة' },
   { name: 'LangChain / RAG', years: '2+ Years', icon: 'cpu', category: 'الذكاء الاصطناعي والأتمتة' },
+  { name: 'Multi-Agent Systems', years: '2+ Years', icon: 'workflow', category: 'الذكاء الاصطناعي والأتمتة' },
+  { name: 'Computer Vision & OCR', years: '3+ Years', icon: 'brain', category: 'الذكاء الاصطناعي والأتمتة' },
+  { name: 'Machine Learning', years: '4+ Years', icon: 'cpu', category: 'الذكاء الاصطناعي والأتمتة' },
   { name: 'FastAPI', years: '3+ Years', icon: 'code', category: 'Backend & Infrastructure' },
   { name: 'PostgreSQL', years: '4+ Years', icon: 'database', category: 'Backend & Infrastructure' },
   { name: 'Redis', years: '2+ Years', icon: 'database', category: 'Backend & Infrastructure' },
