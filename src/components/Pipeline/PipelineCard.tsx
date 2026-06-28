@@ -22,8 +22,8 @@ export default function PipelineCard({ step, isActive, isDimmed, onClick }: Pipe
       onClick={onClick}
       className={`relative cursor-pointer overflow-hidden rounded-2xl border transition-all duration-500 ease-in-out ${
         isActive
-          ? 'border-white/20 bg-[#0a0a1a] shadow-2xl z-10 scale-[1.02] shadow-black/50'
-          : 'border-white/5 bg-white/5 hover:bg-white/10 hover:border-white/10'
+          ? 'border-[#7C3AED]/30 bg-[#0A0F24] shadow-[0_12px_30px_rgba(124,58,237,0.15)] z-10 scale-[1.02]'
+          : 'border-white/[0.08] bg-[#0A0F24] hover:border-white/[0.15] shadow-[0_2px_8px_rgba(0,0,0,0.2)]'
       } ${isDimmed && !isActive ? 'opacity-40 scale-95 blur-[1px]' : 'opacity-100'}`}
       style={{
         boxShadow: isActive ? `0 0 40px -10px ${step.color}30` : undefined,

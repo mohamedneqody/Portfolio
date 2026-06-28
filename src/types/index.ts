@@ -10,8 +10,9 @@ export interface NavItem {
 export interface CaseStudy {
   problem: string;
   solution: string;
-  tech: string;
-  result: string;
+  architecture: string;
+  impact: string;
+  techStack: string;
 }
 
 export interface Project {

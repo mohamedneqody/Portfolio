@@ -21,15 +21,11 @@ export function CertificateCard({ cert, onClick }: { cert: Certificate; onClick:
       onClick={onClick}
       className="group relative h-full cursor-pointer"
     >
-      {/* Glow Effect on Hover (Soft Purple/Cyan) */}
-      <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-[#7C3AED]/0 to-[#22D3EE]/0 opacity-0 blur-xl transition-all duration-700 group-hover:from-[#7C3AED]/30 group-hover:to-[#22D3EE]/30 group-hover:opacity-100" />
+      {/* Glow Effect on Hover (Soft Purple) */}
+      <div className="absolute -inset-1 rounded-2xl bg-[#A855F7]/0 opacity-0 blur-xl transition-all duration-700 group-hover:bg-[#A855F7]/20 group-hover:opacity-100" />
       
       <div 
-        className={`relative flex h-full flex-col overflow-hidden rounded-2xl border transition-all duration-300 transform group-hover:-translate-y-1.5 group-hover:shadow-[0_15px_35px_rgba(0,0,0,0.5)] ${
-          cert.provider.toLowerCase().includes('google') || cert.provider.toLowerCase().includes('ibm')
-            ? 'border-[#22D3EE]/20 bg-[#0a0515]/90 group-hover:border-[#7C3AED]/40'
-            : 'border-white/5 bg-[#0a0515]/80 group-hover:border-[#7C3AED]/40 group-hover:bg-[#0a0515]'
-        } backdrop-blur-md after:absolute after:inset-0 after:-translate-x-[150%] after:bg-gradient-to-r after:from-transparent after:via-white/10 after:to-transparent group-hover:after:animate-[sweep_0.7s_ease-in-out_1]`}
+        className="relative flex h-full flex-col overflow-hidden rounded-2xl bg-white/[0.02] backdrop-blur-md border border-white/[0.06] transition-all duration-500 transform group-hover:-translate-y-1.5 group-hover:bg-white/[0.04] group-hover:border-[#A855F7]/30 group-hover:shadow-[0_15px_35px_rgba(0,0,0,0.3)] after:absolute after:inset-0 after:-translate-x-[150%] after:bg-gradient-to-r after:from-transparent after:via-white/10 after:to-transparent group-hover:after:animate-[sweep_0.7s_ease-in-out_1]"
       >
         {/* Top Badge */}
         {cert.badge && (

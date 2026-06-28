@@ -81,9 +81,10 @@ export const projects: Project[] = [
     year: '2026',
     caseStudy: {
       problem: 'Traditional bots fail under high loads (rate limits), cannot distinguish between diverse tasks like coding vs image analysis, and incur high API costs due to lack of caching.',
-      solution: 'Developed an intelligent Router agent that delegates tasks to specialized sub-agents. Added a "Reflection Agent" to self-correct responses. Implemented Redis queue and caching layers.',
-      tech: 'n8n (Orchestration), Gemini 2.5 Pro (Vision & Core Logic), Redis (Queue/Cache), PostgreSQL (Memory), SearXNG (Web Search).',
-      result: 'Capable of handling thousands of concurrent users flawlessly, with 40% reduced API costs and highly accurate, context-aware responses.',
+      solution: 'Developed an intelligent Router agent that delegates tasks to specialized sub-agents. Added a "Reflection Agent" to self-correct responses.',
+      architecture: 'Microservices architecture with n8n orchestrating Gemini 2.5 Pro (Vision/Core), backed by Redis for rate-limiting/queuing and PostgreSQL for state.',
+      impact: 'Capable of handling thousands of concurrent users flawlessly, with 40% reduced API costs and highly accurate, context-aware responses.',
+      techStack: 'n8n, Gemini 2.5 Pro, Redis, PostgreSQL, SearXNG, Telegram API.',
     }
   },
   {
@@ -100,10 +101,11 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/username/repo',
     year: '2025',
     caseStudy: {
-      problem: 'عملية إعداد التقارير اليدوية كانت تستغرق وقتاً طويلاً جداً ومعرضة للأخطاء البشرية.',
-      solution: 'بناء مسار أتمتة متكامل (Pipeline) يعتمد على الذكاء الاصطناعي لاستخراج البيانات وتحليلها آلياً.',
-      tech: 'استخدام Python للمعالجة، n8n للأتمتة، وربطها مع Google Sheets.',
-      result: 'تقليص وقت إعداد التقارير بنسبة 70% وزيادة دقة البيانات إلى 99%.',
+      problem: 'عملية إعداد التقارير اليدوية كانت تستغرق وقتاً طويلاً جداً ومعرضة للأخطاء البشرية وفقدان التنسيق.',
+      solution: 'بناء مسار أتمتة متكامل (Pipeline) يعتمد على الذكاء الاصطناعي لاستخراج البيانات وتحليلها وتنسيقها آلياً.',
+      architecture: 'Python microservice listening to webhooks from n8n, which pulls data from APIs, processes it via LLMs, and formats it directly into Google Sheets.',
+      impact: 'تقليص وقت إعداد التقارير بنسبة 70% وزيادة دقة البيانات إلى 99%، مما وفر 15 ساعة عمل أسبوعياً.',
+      techStack: 'Python, n8n, Google Sheets API, OpenAI/Gemini APIs.',
     }
   },
   {
@@ -120,10 +122,11 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/username/repo',
     year: '2024',
     caseStudy: {
-      problem: 'سرعة المتجر كانت بطيئة، مما أدى إلى انخفاض المبيعات ومعدل التحويل.',
-      solution: 'إعادة بناء الواجهة الأمامية بالكامل باستخدام Next.js App Router و Server Components.',
-      tech: 'Next.js 15, Tailwind CSS, Stripe, Vercel.',
-      result: 'تحسين سرعة التحميل بمقدار 3 أضعاف وارتفاع معدل التحويل بنسبة 40%.',
+      problem: 'سرعة المتجر كانت بطيئة جداً مع مشاكل في التوسع (Scaling) مما أدى إلى انخفاض المبيعات ومعدل التحويل.',
+      solution: 'إعادة بناء الواجهة الأمامية بالكامل وتحسين طبقة البيانات لتصبح منصة Headless حديثة.',
+      architecture: 'Next.js App Router with React Server Components (RSC) connecting to a headless CMS, with Edge caching via Vercel.',
+      impact: 'تحسين سرعة التحميل بمقدار 3 أضعاف، تحقيق Core Web Vitals 100، وارتفاع معدل التحويل بنسبة 40%.',
+      techStack: 'Next.js 15, React 19, Tailwind CSS v4, Stripe, Vercel Edge Network.',
     }
   },
   {
@@ -140,10 +143,11 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/username/repo',
     year: '2025',
     caseStudy: {
-      problem: 'صعوبة الرد على استفسارات العملاء الطبية البسيطة بسرعة فائقة.',
-      solution: 'تنفيذ نظام Agentic RAG يجيب على الأسئلة بناءً على قاعدة بيانات طبية معتمدة.',
-      tech: 'FastAPI, Supabase Vector, LangChain.',
-      result: 'تخفيف الضغط على الصيادلة بنسبة 50% وتحسين رضا العملاء.',
+      problem: 'صعوبة الرد الفوري والدقيق على استفسارات العملاء الطبية البسيطة، مع تتبع المخزون المعقد مما يسبب ضغطاً على الصيادلة.',
+      solution: 'تنفيذ نظام Agentic RAG يجيب على الأسئلة الطبية بناءً على قاعدة بيانات موثقة ويتصل مباشرة بنظام المخزون.',
+      architecture: 'FastAPI backend serving an Agentic RAG pipeline built with LangChain, storing vectors in Supabase, orchestrated by n8n workflows.',
+      impact: 'تخفيف الضغط على الصيادلة بنسبة 50%، وتسريع الردود إلى أقل من 2 ثانية، مع تحسين رضا العملاء.',
+      techStack: 'FastAPI, Supabase Vector, LangChain, n8n, OpenAI Embeddings.',
     }
   }
 ];

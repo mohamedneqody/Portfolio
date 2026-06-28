@@ -4,7 +4,6 @@ import { useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, MessageSquare, MessageCircle, Briefcase, GitBranch, Send } from 'lucide-react';
 import AnimatedText from '@/components/ui/AnimatedText';
-import GlassCard from '@/components/ui/GlassCard';
 
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -20,7 +19,7 @@ export default function Contact() {
   };
 
   return (
-    <section ref={sectionRef} id="contact" className="relative overflow-hidden bg-[#050510] py-16 md:py-24">
+    <section ref={sectionRef} id="contact" className="relative overflow-hidden bg-transparent py-16 md:py-24">
       {/* Background decorations */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute -right-1/4 top-1/4 h-[500px] w-[500px] rounded-full bg-[#7C3AED]/20 blur-[80px]" />
@@ -61,7 +60,7 @@ export default function Contact() {
               <span className="text-sm font-bold text-[#38BDF8]">متاح لمشاريع العمل الحر</span>
             </div>
 
-            <GlassCard hover={true} className="flex items-center gap-6 p-6 transition-colors duration-300 hover:bg-[#38BDF8]/10 border border-white/5 hover:border-[#38BDF8]/30">
+            <div className="flex items-center gap-6 p-6 rounded-2xl bg-white/[0.02] backdrop-blur-md border border-white/[0.06] transition-all duration-300 hover:bg-white/[0.04] hover:border-[#38BDF8]/30 hover:shadow-[0_0_30px_rgba(56,189,248,0.15)]">
               <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#38BDF8]/10 text-[#38BDF8] shadow-[0_0_15px_rgba(56,189,248,0.2)]">
                 <Mail size={24} />
               </div>
@@ -71,9 +70,9 @@ export default function Contact() {
                   mohameb.eslam460@gmail.com
                 </a>
               </div>
-            </GlassCard>
+            </div>
 
-            <GlassCard hover={true} className="flex items-center gap-6 p-6 transition-colors duration-300 hover:bg-[#38BDF8]/10 border border-white/5 hover:border-[#38BDF8]/30">
+            <div className="flex items-center gap-6 p-6 rounded-2xl bg-white/[0.02] backdrop-blur-md border border-white/[0.06] transition-all duration-300 hover:bg-white/[0.04] hover:border-[#38BDF8]/30 hover:shadow-[0_0_30px_rgba(56,189,248,0.15)]">
               <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#38BDF8]/10 text-[#38BDF8] shadow-[0_0_15px_rgba(56,189,248,0.2)]">
                 <MessageSquare size={24} />
               </div>
@@ -85,7 +84,7 @@ export default function Contact() {
                   <a href="#" aria-label="GitHub" className="text-white/50 hover:text-[#38BDF8] transition-colors"><GitBranch size={20} /></a>
                 </div>
               </div>
-            </GlassCard>
+            </div>
 
           </motion.div>
 
@@ -96,7 +95,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <GlassCard className="p-8 border border-white/10 bg-black/40 backdrop-blur-xl">
+            <div className="p-8 rounded-2xl bg-white/[0.02] backdrop-blur-md border border-white/[0.06] shadow-lg">
               <form onSubmit={handleSubmit} className="flex flex-col gap-6 text-right">
                 <div className="grid gap-6 md:grid-cols-2">
                   <div className="group relative">
@@ -192,7 +191,7 @@ export default function Contact() {
                   </AnimatePresence>
                 </button>
               </form>
-            </GlassCard>
+            </div>
           </motion.div>
         </div>
       </div>

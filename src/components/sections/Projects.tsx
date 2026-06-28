@@ -37,7 +37,7 @@ function ProjectCard({
         transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] as const }}
         className="h-full md:col-span-2 lg:col-span-3"
       >
-        <GlassCard hover={true} className="group flex h-full flex-col lg:flex-row overflow-hidden p-0 transition-all duration-500 hover:bg-[rgba(56,189,248,0.03)] border border-white/5 hover:border-[#38BDF8]/30 shadow-none hover:shadow-[0_0_40px_rgba(56,189,248,0.1)]">
+        <div className="group flex h-full flex-col lg:flex-row overflow-hidden rounded-2xl bg-[#0A0F24] border border-white/[0.08] transition-all duration-500 hover:border-[#38BDF8]/30 shadow-[0_4px_12px_rgba(0,0,0,0.25)] hover:shadow-[0_12px_30px_rgba(34,211,238,0.15),0_0_50px_rgba(34,211,238,0.08)]">
           {/* Image area with Zoom & Overlay */}
           <div className="relative w-full lg:w-1/2 h-64 lg:h-auto overflow-hidden cursor-pointer" onClick={onClick}>
             {project.demoVideo ? (
@@ -80,22 +80,26 @@ function ProjectCard({
               {project.title}
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 flex-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-8 flex-1">
               <div>
-                <h4 className="text-white/50 text-xs lg:text-sm font-bold uppercase tracking-widest mb-2">المشكلة (Problem)</h4>
-                <p className="text-white/80 leading-relaxed text-base lg:text-lg">{project.caseStudy.problem}</p>
+                <h4 className="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-2">المشكلة (Problem)</h4>
+                <p className="text-white/70 leading-relaxed text-sm">{project.caseStudy.problem}</p>
               </div>
               <div>
-                <h4 className="text-white/50 text-xs lg:text-sm font-bold uppercase tracking-widest mb-2">الحل (Solution)</h4>
-                <p className="text-white/80 leading-relaxed text-base lg:text-lg">{project.caseStudy.solution}</p>
+                <h4 className="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-2">الحل (Solution)</h4>
+                <p className="text-white/70 leading-relaxed text-sm">{project.caseStudy.solution}</p>
               </div>
               <div>
-                <h4 className="text-white/50 text-xs lg:text-sm font-bold uppercase tracking-widest mb-2">التقنيات (Tech)</h4>
-                <p className="text-white/80 leading-relaxed text-base lg:text-lg">{project.caseStudy.tech}</p>
+                <h4 className="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-2">المعمارية (Architecture)</h4>
+                <p className="text-white/70 leading-relaxed text-sm">{project.caseStudy.architecture}</p>
               </div>
               <div>
-                <h4 className="text-[#38BDF8]/80 text-xs lg:text-sm font-bold uppercase tracking-widest mb-2">النتيجة (Result)</h4>
-                <p className="text-[#38BDF8] font-bold leading-relaxed text-lg lg:text-xl">{project.caseStudy.result}</p>
+                <h4 className="text-[#38BDF8]/60 text-[10px] font-bold uppercase tracking-widest mb-2">الأثر (Impact)</h4>
+                <p className="text-[#38BDF8] font-bold leading-relaxed text-sm">{project.caseStudy.impact}</p>
+              </div>
+              <div className="md:col-span-2 xl:col-span-1">
+                <h4 className="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-2">التقنيات (Tech Stack)</h4>
+                <p className="text-white/70 leading-relaxed text-sm">{project.caseStudy.techStack}</p>
               </div>
             </div>
 
@@ -113,7 +117,7 @@ function ProjectCard({
               )}
             </div>
           </div>
-        </GlassCard>
+        </div>
       </motion.div>
     );
   }
@@ -129,7 +133,7 @@ function ProjectCard({
       className="h-full"
     >
       <div className="group h-full">
-        <GlassCard hover={true} className="flex h-full flex-col overflow-hidden p-0 transition-all duration-300 hover:bg-[rgba(56,189,248,0.05)] border border-white/5 hover:border-[#38BDF8]/30">
+        <div className="flex h-full flex-col overflow-hidden rounded-2xl bg-[#0A0F24] border border-white/[0.08] transition-all duration-300 hover:border-[#38BDF8]/30 shadow-[0_2px_8px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_30px_rgba(34,211,238,0.15)]">
           {/* Image area */}
           <div className="relative w-full h-56 overflow-hidden cursor-pointer" onClick={onClick}>
             {project.demoVideo ? (
@@ -196,7 +200,7 @@ function ProjectCard({
               )}
             </div>
           </div>
-        </GlassCard>
+        </div>
       </div>
     </motion.div>
   );
@@ -217,7 +221,7 @@ export default function Projects() {
       : projects.filter((p) => p.category === activeCategory);
 
   return (
-    <section ref={sectionRef} id="projects" className="relative overflow-hidden bg-[#050510] py-16 md:py-24">
+    <section ref={sectionRef} id="projects" className="relative overflow-hidden bg-transparent py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-right">
         <AnimatedText
           text="أهم المشاريع"

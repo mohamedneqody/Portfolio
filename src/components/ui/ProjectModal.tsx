@@ -137,20 +137,24 @@ export default function ProjectModal({
               {project.caseStudy && (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 bg-white/5 p-6 rounded-2xl border border-white/5">
                   <div dir="auto">
-                    <h4 className="text-white/50 text-xs font-bold uppercase tracking-widest mb-2">المشكلة (Problem)</h4>
+                    <h4 className="text-white/50 text-[10px] font-bold uppercase tracking-widest mb-2">المشكلة (Problem)</h4>
                     <p className="text-white/80 leading-relaxed text-sm">{project.caseStudy.problem}</p>
                   </div>
                   <div dir="auto">
-                    <h4 className="text-white/50 text-xs font-bold uppercase tracking-widest mb-2">الحل (Solution)</h4>
+                    <h4 className="text-white/50 text-[10px] font-bold uppercase tracking-widest mb-2">الحل (Solution)</h4>
                     <p className="text-white/80 leading-relaxed text-sm">{project.caseStudy.solution}</p>
                   </div>
                   <div dir="auto">
-                    <h4 className="text-white/50 text-xs font-bold uppercase tracking-widest mb-2">التقنيات (Tech)</h4>
-                    <p className="text-white/80 leading-relaxed text-sm">{project.caseStudy.tech}</p>
+                    <h4 className="text-white/50 text-[10px] font-bold uppercase tracking-widest mb-2">المعمارية (Architecture)</h4>
+                    <p className="text-white/80 leading-relaxed text-sm">{project.caseStudy.architecture}</p>
                   </div>
                   <div dir="auto">
-                    <h4 className="text-[#38BDF8]/80 text-xs font-bold uppercase tracking-widest mb-2">النتيجة (Result)</h4>
-                    <p className="text-[#38BDF8] font-bold leading-relaxed text-base">{project.caseStudy.result}</p>
+                    <h4 className="text-[#38BDF8]/80 text-[10px] font-bold uppercase tracking-widest mb-2">الأثر (Impact)</h4>
+                    <p className="text-[#38BDF8] font-bold leading-relaxed text-base">{project.caseStudy.impact}</p>
+                  </div>
+                  <div dir="auto" className="md:col-span-2">
+                    <h4 className="text-white/50 text-[10px] font-bold uppercase tracking-widest mb-2">التقنيات (Tech Stack)</h4>
+                    <p className="text-white/80 leading-relaxed text-sm">{project.caseStudy.techStack}</p>
                   </div>
                 </div>
               )}

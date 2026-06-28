@@ -54,9 +54,8 @@ export const metadata: Metadata = {
   },
 };
 
-import { Preloader } from "@/components/ui/Preloader";
 import { MouseEffects } from "@/components/ui/MouseEffects";
-import MeshGradient from "@/components/backgrounds/MeshGradient";
+import { colors } from "@/styles";
 
 export default function RootLayout({
   children,
@@ -74,19 +73,28 @@ export default function RootLayout({
         <meta name="theme-color" content="#0a0612" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="min-h-screen bg-dark-bg text-text-primary font-sans overflow-x-hidden cursor-none">
-        <Preloader />
+      <body className="min-h-screen font-sans overflow-x-hidden cursor-none" style={{ backgroundColor: colors.background, color: colors.text.primary }}>
         <MouseEffects />
         
-        {/* Guaranteed Animated Background */}
-        <MeshGradient />
+        {/* Global Purple Ambient Light */}
+        <div className="pointer-events-none fixed top-0 left-0 w-full h-[120vh] z-0 overflow-hidden">
+          <div className="absolute -top-[20%] -right-[10%] w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] rounded-full mix-blend-screen opacity-10 blur-[120px]" style={{ backgroundColor: colors.primary }} />
+        </div>
         
-        {/* Global Advanced 3D Background */}
+        {/* Global Advanced 3D Background - Kept but will be simplified later */}
         <BackgroundCanvas />
         
-        {/* Noise texture overlay for premium feel */}
-        <div className="noise-overlay" aria-hidden="true" />
-        {children}
+        {/* SVG Noise overlay for premium cinematic feel (Opacity 2%) */}
+        <svg className="pointer-events-none fixed inset-0 z-50 h-full w-full opacity-[0.02]" xmlns="http://www.w3.org/2000/svg">
+          <filter id="noiseFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+          </filter>
+          <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+        </svg>
+
+        <div className="relative z-10">
+          {children}
+        </div>
       </body>
     </html>
   );
