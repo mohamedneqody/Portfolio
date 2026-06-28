@@ -152,29 +152,17 @@ export const projects: Project[] = [
 // ─── Project Categories ──────────────────────
 export const categories = ['الكل', 'الذكاء الاصطناعي & تعلم الآلة', 'تطبيقات ويب', 'أخرى'] as const;
 
+// ─── Skills ──────────────────────────────────
 export const skills: Skill[] = [
-  // 1. الذكاء الاصطناعي (AI & LLMs)
-  { name: 'LangChain & LangGraph', years: '2+ Years', icon: 'brain', category: '1. الذكاء الاصطناعي (AI & LLMs)' },
-  { name: 'LlamaIndex', years: '2+ Years', icon: 'cpu', category: '1. الذكاء الاصطناعي (AI & LLMs)' },
-  { name: 'OpenAI & Gemini APIs', years: '3+ Years', icon: 'python', category: '1. الذكاء الاصطناعي (AI & LLMs)' },
-
-  // 2. الواجهات الخلفية (Backend)
-  { name: 'FastAPI', years: '3+ Years', icon: 'node', category: '2. الواجهات الخلفية (Backend)' },
-  { name: 'Django & Flask', years: '5+ Years', icon: 'python', category: '2. الواجهات الخلفية (Backend)' },
-  { name: 'Pydantic', years: '3+ Years', icon: 'typescript', category: '2. الواجهات الخلفية (Backend)' },
-  { name: 'SQLAlchemy', years: '4+ Years', icon: 'postgresql', category: '2. الواجهات الخلفية (Backend)' },
-
-  // 3. الأتمتة واستخراج البيانات (Automation & Scraping)
-  { name: 'n8n Automation', years: '2+ Years', icon: 'brain', category: '3. الأتمتة (Automation & Scraping)' },
-  { name: 'Selenium & Playwright', years: '4+ Years', icon: 'vscode', category: '3. الأتمتة (Automation & Scraping)' },
-  { name: 'BeautifulSoup & Scrapy', years: '4+ Years', icon: 'html5', category: '3. الأتمتة (Automation & Scraping)' },
-  { name: 'Requests & HTTPX', years: '5+ Years', icon: 'graphql', category: '3. الأتمتة (Automation & Scraping)' },
-
-  // 4. تحليل وإدارة البيانات (Data & Infrastructure)
-  { name: 'Pandas & NumPy', years: '5+ Years', icon: 'postgresql', category: '4. إدارة البيانات (Data & Infra)' },
-  { name: 'PostgreSQL', years: '4+ Years', icon: 'postgresql', category: '4. إدارة البيانات (Data & Infra)' },
-  { name: 'Redis', years: '2+ Years', icon: 'postgresql', category: '4. إدارة البيانات (Data & Infra)' },
-  { name: 'Docker', years: '3+ Years', icon: 'docker', category: '4. إدارة البيانات (Data & Infra)' },
+  { name: 'AI Agents & LLMs', years: '3+ Years', icon: 'brain', category: 'الذكاء الاصطناعي والأتمتة' },
+  { name: 'Python', years: '5+ Years', icon: 'terminal', category: 'الذكاء الاصطناعي والأتمتة' },
+  { name: 'n8n Automation', years: '2+ Years', icon: 'workflow', category: 'الذكاء الاصطناعي والأتمتة' },
+  { name: 'LangChain / RAG', years: '2+ Years', icon: 'cpu', category: 'الذكاء الاصطناعي والأتمتة' },
+  { name: 'FastAPI', years: '3+ Years', icon: 'code', category: 'Backend & Infrastructure' },
+  { name: 'PostgreSQL', years: '4+ Years', icon: 'database', category: 'Backend & Infrastructure' },
+  { name: 'Redis', years: '2+ Years', icon: 'database', category: 'Backend & Infrastructure' },
+  { name: 'Docker', years: '3+ Years', icon: 'container', category: 'Backend & Infrastructure' },
+  { name: 'Next.js / React', years: '3+ Years', icon: 'layout', category: 'تطوير الويب' },
 ];
 
 // ─── Social Links ────────────────────────────
