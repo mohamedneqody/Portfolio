@@ -66,6 +66,25 @@ export const services: Service[] = [
 // ─── Projects ────────────────────────────────
 export const projects: Project[] = [
   {
+    id: 5,
+    title: 'نظام ذكي متكامل لتوقع أسعار العقارات (MLOps)',
+    description: 'نظام ذكاء اصطناعي احترافي يتوقع أسعار العقارات ويفسر أسباب التسعير بشكل آلي باستخدام 12 نموذج تعلم آلي معاً.',
+    longDescription: 'نظام متقدم مبني وفق معايير أنظمة الإنتاج (Production-Grade). يدمج هذا المشروع بين قوة الأتمتة واستخراج البيانات، وتدريب 12 نموذجاً مختلفاً للتعلم الآلي. يستخدم النظام مكتبة Optuna لتحسين دقة النماذج ذاتياً (Bayesian Optimization)، ومكتبة SHAP لشرح وتفسير قرارات الذكاء الاصطناعي بدقة متناهية، كل هذا معروض عبر لوحة تحكم تفاعلية احترافية مبنية بـ Streamlit. يعمل النظام بكفاءة تامة وتم تصميمه ليتعامل تلقائياً مع البيانات المفقودة والشاذة.',
+    image: '/projects/real-estate.jpg',
+    tags: ['Python', 'Scikit-Learn', 'XGBoost', 'Optuna', 'SHAP', 'Streamlit', 'MLOps'],
+    category: 'الذكاء الاصطناعي & تعلم الآلة',
+    liveUrl: 'https://github.com/mohamedneqody/RealEstatePrediction',
+    githubUrl: 'https://github.com/mohamedneqody/RealEstatePrediction',
+    year: '2026',
+    caseStudy: {
+      problem: 'افتقار الأنظمة التقليدية للقدرة على تبرير التسعير للعملاء، مما يؤدي إلى انعدام الثقة، بالإضافة إلى صعوبة اختيار أفضل نموذج ذكاء اصطناعي بشكل آلي.',
+      solution: 'بناء نظام (Ensemble) يدمج 12 خوارزمية (مثل XGBoost, Random Forest) لاختيار أفضل أداء عبر Optuna، وتطبيق تقنية SHAP لإصدار تقرير تفصيلي يفسر كل دولار في سعر العقار.',
+      architecture: 'مسار معالجة بيانات معياري بالكامل (Modular Pipeline) يفصل بين سحب البيانات، التنظيف، هندسة الخصائص، والتدريب. الواجهة الأمامية مبنية بـ Streamlit لعرض النتائج مباشرة.',
+      impact: 'تحقيق دقة فائقة (R² > 0.94) في التوقعات، وتوفير شفافية تامة للعميل من خلال لوحة تحكم تفاعلية توفر إجابات فورية لأسباب تغير السعر.',
+      techStack: 'Python, XGBoost, Streamlit, Optuna, SHAP, Pandas, Scikit-Learn.',
+    }
+  },
+  {
     id: 4,
     title: 'Enterprise Multi-Agent AI Assistant',
     description:
