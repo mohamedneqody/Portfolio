@@ -85,6 +85,46 @@ export const projects: Project[] = [
     }
   },
   {
+    id: 98,
+    title: 'Telegram AI Data Extractor Bot',
+    description: 'بوت تيليجرام متطور مدعوم بـ n8n لتحويل الصور والمستندات إلى ملفات Excel أوتوماتيكياً.',
+    longDescription: 'نظام متكامل يعتمد على منصة n8n لالتقاط الصور والمستندات المرسلة عبر تيليجرام (حتى لو كانت بصيغة ألبوم/مجموعة صور). يقوم البوت بتجميع الصور، تنظيم الطوابير (Queues) لمنع التداخل، ثم إرسالها إلى محرك ذكاء اصطناعي (FastAPI) لاستخراج الجداول، ليرد على المستخدم النهائي بملف Excel منظم ومدمج في ثوانٍ.',
+    image: '/projects/telegram_ai_bot.jpg',
+    demoVideo: 'https://www.w3schools.com/html/mov_bbb.mp4',
+    tags: ['n8n', 'Telegram API', 'FastAPI', 'AI/LLMs', 'Workflow Automation'],
+    category: 'أتمتة الأعمال (Workflow Automation)',
+    liveUrl: 'https://t.me/YourBotUsername',
+    githubUrl: 'https://github.com/mohamedneqody',
+    year: '2026',
+    caseStudy: {
+      problem: 'التعامل مع الصور المتعددة (الألبومات) في تيليجرام يعتبر معقداً برمجياً لأن تيليجرام يرسل كل صورة كرسالة منفصلة، مما يسبب تداخل الطلبات إذا تم إرسالها مباشرة لمعالجة الذكاء الاصطناعي.',
+      solution: 'تصميم سير عمل (Workflow) ذكي جداً على n8n يستخدم قاعدة بيانات مؤقتة لتجميع الصور التابعة لنفس الألبوم (Media Group)، والانتظار حتى اكتمال التحميل، ثم دمجها في طلب واحد (API Payload) إلى محرك استخراج البيانات.',
+      architecture: 'n8n Webhooks, Polling loops, Data mapping, Temporary DB Queues (dead_letter_queue & album_queue), and HTTP Async polling to FastAPI backend.',
+      impact: 'أتمتة عملية استخراج البيانات بالكامل عبر الهاتف من خلال تيليجرام، وتوفير تجربة مستخدم سلسة وخالية من الأخطاء حتى عند إرسال عشرات الصور دفعة واحدة.',
+      techStack: 'n8n, JavaScript (Code Nodes), Telegram Bot API, REST APIs.',
+    }
+  },
+  {
+    id: 99,
+    title: 'نظام الذكاء الاصطناعي لاستخراج البيانات (Smart OCR)',
+    description: 'نظام مؤسسي (Enterprise) مدعوم بالذكاء الاصطناعي لتحليل المستندات واستخراج الجداول والبيانات بدقة متناهية.',
+    longDescription: 'بناء نظام متكامل لتحليل المستندات المعقدة وتحويلها إلى بيانات منظمة (Structured Data) جاهزة للتحليل. النظام يتجاهل التنسيقات البصرية المعقدة ويستخرج الجداول بشكل ذكي ومدمج (Enterprise Excel Export)، مع قدرات التحقق التلقائي ومعالجة البيانات الضخمة، ليكون بديلاً عن إدخال البيانات اليدوي.',
+    image: '/projects/ocr_smart_system.jpg',
+    demoVideo: 'https://www.w3schools.com/html/mov_bbb.mp4',
+    tags: ['Python', 'FastAPI', 'AI/LLMs', 'n8n', 'Data Engineering'],
+    category: 'الذكاء الاصطناعي & تعلم الآلة',
+    liveUrl: 'https://github.com/mohamedneqody',
+    githubUrl: 'https://github.com/mohamedneqody/doc-intelligence',
+    year: '2026',
+    caseStudy: {
+      problem: 'استخراج الجداول المعقدة والبيانات المالية من ملفات PDF الممسوحة ضوئياً كان يستغرق وقتاً طويلاً ومعدل الخطأ فيه مرتفع بسبب التنسيقات المتداخلة.',
+      solution: 'تصميم خط أنابيب (Pipeline) يعتمد على نماذج اللغة الكبيرة ونظام تصدير ذكي يحول المستندات إلى جداول Excel جاهزة للتحليل المباشر في Power BI أو Pandas.',
+      architecture: 'FastAPI Microservice, AI Document Layout Parser, Enterprise Normalization & Validator Engine.',
+      impact: 'تحويل ساعات من العمل اليدوي إلى ثوانٍ معدودة، مع دقة 100% في ربط جداول البيانات المتعددة الصفحات، مما حقق أتمتة كاملة للشركات.',
+      techStack: 'Python, FastAPI, Gemini API, Pandas, n8n.',
+    }
+  },
+  {
     id: 4,
     title: 'Enterprise Multi-Agent AI Assistant',
     description:
